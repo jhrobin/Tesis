@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_CXMHkGSfEeanSuCkuAwiog" name="RootElement">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_-vtWcHz7EeaFbaOq4OILlg" annotatedElement="_zh-PgHz3EeaFbaOq4OILlg">
+      <body>Condition: {inclination_angle => 5°}
+Extend point: Inclination angle</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_A6aeAHz9EeaFbaOq4OILlg" annotatedElement="_38aP8Hz2EeaFbaOq4OILlg">
+      <body>Condition: {conec_type = ownlik'}
+Extend point: Tipo de conexión con la anena</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_PDtHYGSoEeaQG6CvTBN4Qg" name="CONAE Ground Station">
       <packagedElement xmi:type="uml:Class" xmi:id="_mCnOsGVOEeah-PZgd78gpA" name="Client_Computer (GUI)">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_wX2XoGVjEeah-PZgd78gpA" name="station control system (scs)_1" type="_CiB1oGVPEeah-PZgd78gpA" association="_wX1wkGVjEeah-PZgd78gpA"/>
@@ -212,15 +220,17 @@
         <include xmi:type="uml:Include" xmi:id="_oTtrwHxREeaTxbq9MExE2Q" addition="_s2LMUHw7EeaTxbq9MExE2Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_JeLlkG35Eea-X92HuTy0Gw" name="Ejecutar seguimiento de pasadas">
+        <extend xmi:type="uml:Extend" xmi:id="_38aP8Hz2EeaFbaOq4OILlg" extendedCase="_cRU9sG4IEea-X92HuTy0Gw" extensionLocation="_38beEHz2EeaFbaOq4OILlg"/>
         <include xmi:type="uml:Include" xmi:id="_GRWZoHxREeaTxbq9MExE2Q" addition="_CPONgHw8EeaTxbq9MExE2Q"/>
         <include xmi:type="uml:Include" xmi:id="_QuS5oHxREeaTxbq9MExE2Q" addition="_UttZEG35Eea-X92HuTy0Gw"/>
-        <include xmi:type="uml:Include" xmi:id="_ADFjwHxVEeaTxbq9MExE2Q" addition="_cRU9sG4IEea-X92HuTy0Gw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_PsUi0G35Eea-X92HuTy0Gw" name="Monitorear pasadas cargadas">
         <include xmi:type="uml:Include" xmi:id="_yAuZEHxQEeaTxbq9MExE2Q" addition="_JeLlkG35Eea-X92HuTy0Gw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_UttZEG35Eea-X92HuTy0Gw" name="Generar y enviar trama de comunicación"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z0K8kG35Eea-X92HuTy0Gw" name="Cargar y Propagar TLE en GUI"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z0K8kG35Eea-X92HuTy0Gw" name="Cargar y Propagar TLE en GUI">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FZmYYHz4EeaFbaOq4OILlg" name="ExtensionPoint1"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_cwFUEG35Eea-X92HuTy0Gw" name="ABM de Misión"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_gbJ3oG35Eea-X92HuTy0Gw" name="Generar Archivo de Configuración"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_pj_EYG35Eea-X92HuTy0Gw" name="Mostrar estado de componentes e instrumentos"/>
@@ -229,7 +239,9 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_0EenoG35Eea-X92HuTy0Gw" name="Consultar datos en BD">
         <include xmi:type="uml:Include" xmi:id="_JvyvEHxUEeaTxbq9MExE2Q" addition="_jiPKgHw1EeaTxbq9MExE2Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_cRU9sG4IEea-X92HuTy0Gw" name="Almacenar datos de downlink"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cRU9sG4IEea-X92HuTy0Gw" name="Almacenar datos de downlink">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_38beEHz2EeaFbaOq4OILlg" name="ExtensionPoint1"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_VOszcHw1EeaTxbq9MExE2Q" name="Seleccionar pasadas a trackear">
         <include xmi:type="uml:Include" xmi:id="_13MM8HxTEeaTxbq9MExE2Q" addition="_gbJ3oG35Eea-X92HuTy0Gw"/>
       </packagedElement>
@@ -237,12 +249,17 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_jiPKgHw1EeaTxbq9MExE2Q" name="Iniciar sesión de Usuario"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_mAGsYHw7EeaTxbq9MExE2Q" name="Obtener TLE"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_s2LMUHw7EeaTxbq9MExE2Q" name="Seleccionar modo de ejecución de script"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_CPONgHw8EeaTxbq9MExE2Q" name="Validar ángulo de elevación de la antena"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_CPONgHw8EeaTxbq9MExE2Q" name="Validar ángulo de elevación de la antena">
+        <extend xmi:type="uml:Extend" xmi:id="_zh-PgHz3EeaFbaOq4OILlg" extendedCase="_wc5U8Hz3EeaFbaOq4OILlg" extensionLocation="_zh-PgXz3EeaFbaOq4OILlg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_dGmNsHw-EeaTxbq9MExE2Q" name="ABM de Usuario"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_NebIgHxKEeaTxbq9MExE2Q" client="_pj_EYG35Eea-X92HuTy0Gw" supplier="_vVTiwG35Eea-X92HuTy0Gw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_bHgeQHxTEeaTxbq9MExE2Q" client="_PsUi0G35Eea-X92HuTy0Gw" supplier="_gbJ3oG35Eea-X92HuTy0Gw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_fzRNUHxUEeaTxbq9MExE2Q" client="_feV3QHw1EeaTxbq9MExE2Q" supplier="_cwFUEG35Eea-X92HuTy0Gw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_rmeVoHxUEeaTxbq9MExE2Q" client="_jiPKgHw1EeaTxbq9MExE2Q" supplier="_dGmNsHw-EeaTxbq9MExE2Q"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_wc5U8Hz3EeaFbaOq4OILlg" name="Encender HPA" visibility="public">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zh-PgXz3EeaFbaOq4OILlg" name="ExtensionPoint1"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_4dKfIG35Eea-X92HuTy0Gw" name="User"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZligAHRiEeaYbPgMtC8k1Q" name="Block11"/>
@@ -311,6 +328,48 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_-l3iYnxVEeaTxbq9MExE2Q" name="asociar pasadas a una misión" type="_feV3QHw1EeaTxbq9MExE2Q" association="_-l27UHxVEeaTxbq9MExE2Q"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_-l3iY3xVEeaTxbq9MExE2Q" name="user" type="_4dKfIG35Eea-X92HuTy0Gw" association="_-l27UHxVEeaTxbq9MExE2Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dQe_4Hz2EeaFbaOq4OILlg" memberEnd="_dQmUoHz2EeaFbaOq4OILlg _dQmUoXz2EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dQlGgHz2EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dQltkHz2EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dQmUoHz2EeaFbaOq4OILlg" name="user" type="_4dKfIG35Eea-X92HuTy0Gw" association="_dQe_4Hz2EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dQmUoXz2EeaFbaOq4OILlg" name="consultar datos en bd" type="_0EenoG35Eea-X92HuTy0Gw" association="_dQe_4Hz2EeaFbaOq4OILlg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jcBVEHz2EeaFbaOq4OILlg" memberEnd="_jcB8Inz2EeaFbaOq4OILlg _jcCjMHz2EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jcB8IHz2EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jcB8IXz2EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jcB8Inz2EeaFbaOq4OILlg" name="administrador" type="_qs-R4HxAEeaTxbq9MExE2Q" association="_jcBVEHz2EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jcCjMHz2EeaFbaOq4OILlg" name="abm de usuario" type="_dGmNsHw-EeaTxbq9MExE2Q" association="_jcBVEHz2EeaFbaOq4OILlg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_km7pAHz2EeaFbaOq4OILlg" memberEnd="_km9eMHz2EeaFbaOq4OILlg _km-FQHz2EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_km83IHz2EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_km83IXz2EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_km9eMHz2EeaFbaOq4OILlg" name="administrador" type="_qs-R4HxAEeaTxbq9MExE2Q" association="_km7pAHz2EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_km-FQHz2EeaFbaOq4OILlg" name="abm de equipo cliente" type="_ta6SoG35Eea-X92HuTy0Gw" association="_km7pAHz2EeaFbaOq4OILlg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ldOX0Hz2EeaFbaOq4OILlg" memberEnd="_ldOX03z2EeaFbaOq4OILlg _ldOX1Hz2EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ldOX0Xz2EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ldOX0nz2EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ldOX03z2EeaFbaOq4OILlg" name="administrador" type="_qs-R4HxAEeaTxbq9MExE2Q" association="_ldOX0Hz2EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ldOX1Hz2EeaFbaOq4OILlg" name="abm de componente o instrumento" type="_vVTiwG35Eea-X92HuTy0Gw" association="_ldOX0Hz2EeaFbaOq4OILlg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mUFHUHz2EeaFbaOq4OILlg" memberEnd="_mUFuYHz2EeaFbaOq4OILlg _mUFuYXz2EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mUFHUXz2EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mUFHUnz2EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mUFuYHz2EeaFbaOq4OILlg" name="administrador" type="_qs-R4HxAEeaTxbq9MExE2Q" association="_mUFHUHz2EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mUFuYXz2EeaFbaOq4OILlg" name="abm de misión" type="_cwFUEG35Eea-X92HuTy0Gw" association="_mUFHUHz2EeaFbaOq4OILlg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uROx0Hz7EeaFbaOq4OILlg" memberEnd="_uRP_8nz7EeaFbaOq4OILlg _uRP_83z7EeaFbaOq4OILlg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uRP_8Hz7EeaFbaOq4OILlg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uRP_8Xz7EeaFbaOq4OILlg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uRP_8nz7EeaFbaOq4OILlg" name="mostrar estado de componentes e instrumentos" type="_pj_EYG35Eea-X92HuTy0Gw" association="_uROx0Hz7EeaFbaOq4OILlg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uRP_83z7EeaFbaOq4OILlg" name="time" type="_SnFRYHRoEeaYbPgMtC8k1Q" association="_uROx0Hz7EeaFbaOq4OILlg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
