@@ -51,7 +51,7 @@ Extend point: Tipo de conexión con la anena</body>
         <end xmi:type="uml:ConnectorEnd" xmi:id="__iCFEWSuEeaQG6CvTBN4Qg" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_8yXZ0GSuEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="__iCFEmSuEeaQG6CvTBN4Qg" partWithPort="_5g0bcGSsEeaQG6CvTBN4Qg" role="_952mUGSuEeaQG6CvTBN4Qg"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_E2PewGSxEeaQG6CvTBN4Qg" name="Inst_data">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_E2PewGSxEeaQG6CvTBN4Qg" name="Inst_link">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_E2QF0GSxEeaQG6CvTBN4Qg" partWithPort="_PlwkMGSrEeaQG6CvTBN4Qg" role="_CyuH0GSxEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_E2QF0WSxEeaQG6CvTBN4Qg" role="_7D7QIGSwEeaQG6CvTBN4Qg"/>
       </ownedConnector>
@@ -59,11 +59,7 @@ Extend point: Tipo de conexión con la anena</body>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_zWfZMGVGEeah-PZgd78gpA" role="_BmCc0GSyEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_zWfZMWVGEeah-PZgd78gpA" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_v_avsGVGEeah-PZgd78gpA"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_Eu9g4GVHEeah-PZgd78gpA">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_Eu-H8GVHEeah-PZgd78gpA" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_AWK7sGVHEeah-PZgd78gpA"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_Eu-H8WVHEeah-PZgd78gpA" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_-9Oy0GVGEeah-PZgd78gpA"/>
-      </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_ks0LUGVMEeah-PZgd78gpA" name="TLE's Repository link">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_ks0LUGVMEeah-PZgd78gpA" name="TLE_Repository_link">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_ks0yYGVMEeah-PZgd78gpA" role="_hVFagGVMEeah-PZgd78gpA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_ks0yYWVMEeah-PZgd78gpA" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_ie2e8GVMEeah-PZgd78gpA"/>
       </ownedConnector>
@@ -74,6 +70,10 @@ Extend point: Tipo de conexión con la anena</body>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_wOzBIHatEeaG75-z1fEgbA" name="Connector1">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_wPb6UHatEeaG75-z1fEgbA" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_2akKQGSuEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_wPb6UXatEeaG75-z1fEgbA" partWithPort="_PlwkMGSrEeaQG6CvTBN4Qg" role="_4MGZUGSuEeaQG6CvTBN4Qg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_MHYI4H0BEeaFbaOq4OILlg" name="Connector2">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_MHuHIH0BEeaFbaOq4OILlg" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_AWK7sGVHEeah-PZgd78gpA"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_MHuHIX0BEeaFbaOq4OILlg" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_-9Oy0GVGEeah-PZgd78gpA"/>
       </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_P1g3cGSrEeaQG6CvTBN4Qg" name="Block1">
