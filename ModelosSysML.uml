@@ -213,9 +213,7 @@ Extend point: Tipo de conexión con la anena</body>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_7PYkkG34Eea-X92HuTy0Gw" name="Comandar y configurar componentes">
         <include xmi:type="uml:Include" xmi:id="_4Y3fgHxTEeaTxbq9MExE2Q" addition="_gbJ3oG35Eea-X92HuTy0Gw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_B8xCkG35Eea-X92HuTy0Gw" name="Propagar y Almacenar TLE">
-        <include xmi:type="uml:Include" xmi:id="_pPf0AHxQEeaTxbq9MExE2Q" addition="_mAGsYHw7EeaTxbq9MExE2Q"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_B8xCkG35Eea-X92HuTy0Gw" name="Obtener, Propagar y Almacenar TLE"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_FM7y0G35Eea-X92HuTy0Gw" name="Cargar nuevo script">
         <include xmi:type="uml:Include" xmi:id="_oTtrwHxREeaTxbq9MExE2Q" addition="_s2LMUHw7EeaTxbq9MExE2Q"/>
       </packagedElement>
@@ -247,14 +245,11 @@ Extend point: Tipo de conexión con la anena</body>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_feV3QHw1EeaTxbq9MExE2Q" name="Asociar pasadas a una Misión"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_jiPKgHw1EeaTxbq9MExE2Q" name="Iniciar sesión de Usuario"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_mAGsYHw7EeaTxbq9MExE2Q" name="Obtener TLE"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_s2LMUHw7EeaTxbq9MExE2Q" name="Seleccionar modo de ejecución de script"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_CPONgHw8EeaTxbq9MExE2Q" name="Validar ángulo de elevación de la antena">
         <extend xmi:type="uml:Extend" xmi:id="_zh-PgHz3EeaFbaOq4OILlg" extendedCase="_wc5U8Hz3EeaFbaOq4OILlg" extensionLocation="_zh-PgXz3EeaFbaOq4OILlg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_dGmNsHw-EeaTxbq9MExE2Q" name="ABM de Usuario"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_NebIgHxKEeaTxbq9MExE2Q" client="_pj_EYG35Eea-X92HuTy0Gw" supplier="_vVTiwG35Eea-X92HuTy0Gw"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_bHgeQHxTEeaTxbq9MExE2Q" client="_PsUi0G35Eea-X92HuTy0Gw" supplier="_gbJ3oG35Eea-X92HuTy0Gw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_fzRNUHxUEeaTxbq9MExE2Q" client="_feV3QHw1EeaTxbq9MExE2Q" supplier="_cwFUEG35Eea-X92HuTy0Gw"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_rmeVoHxUEeaTxbq9MExE2Q" client="_jiPKgHw1EeaTxbq9MExE2Q" supplier="_dGmNsHw-EeaTxbq9MExE2Q"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_wc5U8Hz3EeaFbaOq4OILlg" name="Encender HPA" visibility="public">
