@@ -1771,7 +1771,7 @@ Creación de nueva instancia de usuario.</body>
       <group xmi:type="uml:ActivityPartition" xmi:id="_loqI4P9lEeaIMclfdmhQww" name="Files_Repository" node="_xZREoP9vEeaIMclfdmhQww _MZYmkP9xEeaIMclfdmhQww"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_nuU04P9lEeaIMclfdmhQww" name="Timer_Exec" node="_km1CAP9xEeaIMclfdmhQww"/>
       <node xmi:type="uml:InitialNode" xmi:id="_0jsIUP9mEeaIMclfdmhQww" name="" outgoing="_v1sSsP9nEeaIMclfdmhQww" inPartition="_d2i3cP9lEeaIMclfdmhQww"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_5glgIP9mEeaIMclfdmhQww" name="Recibir petición usuario" incoming="_v1sSsP9nEeaIMclfdmhQww" outgoing="_zkVusP9nEeaIMclfdmhQww" inPartition="_d2i3cP9lEeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5glgIP9mEeaIMclfdmhQww" name="Recibir petición del User" incoming="_v1sSsP9nEeaIMclfdmhQww" outgoing="_zkVusP9nEeaIMclfdmhQww" inPartition="_d2i3cP9lEeaIMclfdmhQww"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_8lh30P9mEeaIMclfdmhQww" name="Mostrar pantalla de carga de datos" incoming="_zkVusP9nEeaIMclfdmhQww" outgoing="_0V3SQP9nEeaIMclfdmhQww" inPartition="_d2i3cP9lEeaIMclfdmhQww"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_rcVFwP9nEeaIMclfdmhQww" name="Enviar datos ingresados por el User" incoming="_0V3SQP9nEeaIMclfdmhQww" outgoing="_Dj1RQP9oEeaIMclfdmhQww" inPartition="_d2i3cP9lEeaIMclfdmhQww"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_3O9mUP9nEeaIMclfdmhQww" name="Capturar datos ingresados" incoming="_Dj1RQP9oEeaIMclfdmhQww" outgoing="_V2be4P9oEeaIMclfdmhQww" inPartition="_f2xp0P9lEeaIMclfdmhQww"/>
@@ -1792,6 +1792,59 @@ Creación de nueva instancia de usuario.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_TBUj4P9xEeaIMclfdmhQww" name="Finalizar ejecución" incoming="_Xs9zoP9xEeaIMclfdmhQww" outgoing="_mtBScP9xEeaIMclfdmhQww" inPartition="_iUUqUP9lEeaIMclfdmhQww"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_km1CAP9xEeaIMclfdmhQww" name="Iniciar tiempo para ejecución" incoming="_mtBScP9xEeaIMclfdmhQww" outgoing="_07T9IP9xEeaIMclfdmhQww" inPartition="_nuU04P9lEeaIMclfdmhQww"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_yc0hcP9xEeaIMclfdmhQww" name="" incoming="_07T9IP9xEeaIMclfdmhQww _4heLgP9xEeaIMclfdmhQww" inPartition="_iUUqUP9lEeaIMclfdmhQww"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_6ub84P9yEeaIMclfdmhQww" name="Comandar y configurar componentes" node="_gVK7YP94EeaIMclfdmhQww _2BRbcP94EeaIMclfdmhQww __NghgP94EeaIMclfdmhQww _FjJ08P95EeaIMclfdmhQww _ZLV8gP95EeaIMclfdmhQww _BvLXkP96EeaIMclfdmhQww _bFIdwP97EeaIMclfdmhQww _xSWG0P97EeaIMclfdmhQww _BCfl0P98EeaIMclfdmhQww _Hg2JUP98EeaIMclfdmhQww _POGI4P98EeaIMclfdmhQww _YJdhYP98EeaIMclfdmhQww _gizx8P98EeaIMclfdmhQww _4xQS8P98EeaIMclfdmhQww _LY0rAP99EeaIMclfdmhQww _Svsx8P99EeaIMclfdmhQww _aihOAP99EeaIMclfdmhQww _F15_kP9-EeaIMclfdmhQww _XkF4kP9-EeaIMclfdmhQww _fu9BMP9-EeaIMclfdmhQww _kZe2oP9-EeaIMclfdmhQww _BO5iwP9_EeaIMclfdmhQww" group="_kdl0MP92EeaIMclfdmhQww _lzG1oP92EeaIMclfdmhQww _na1ocP92EeaIMclfdmhQww _pFiPsP92EeaIMclfdmhQww _rFBbMP92EeaIMclfdmhQww _sm5doP92EeaIMclfdmhQww">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_OYzxkP96EeaIMclfdmhQww" target="_2BRbcP94EeaIMclfdmhQww" source="_gVK7YP94EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Pvrd4P96EeaIMclfdmhQww" target="__NghgP94EeaIMclfdmhQww" source="_2BRbcP94EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_SKRRAP96EeaIMclfdmhQww" target="_FjJ08P95EeaIMclfdmhQww" source="__NghgP94EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_dr0ooP96EeaIMclfdmhQww" target="_BvLXkP96EeaIMclfdmhQww" source="_ZLV8gP95EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_O7FiwP97EeaIMclfdmhQww" target="_ZLV8gP95EeaIMclfdmhQww" source="_FjJ08P95EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_tN_EEP98EeaIMclfdmhQww" target="_BCfl0P98EeaIMclfdmhQww" source="_xSWG0P97EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_vYRKUP98EeaIMclfdmhQww" target="_Hg2JUP98EeaIMclfdmhQww" source="_BCfl0P98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wRQn0P98EeaIMclfdmhQww" target="_POGI4P98EeaIMclfdmhQww" source="_Hg2JUP98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xZqaUP98EeaIMclfdmhQww" target="_YJdhYP98EeaIMclfdmhQww" source="_POGI4P98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_15pMoP98EeaIMclfdmhQww" target="_gizx8P98EeaIMclfdmhQww" source="_YJdhYP98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_71_PQP98EeaIMclfdmhQww" target="_4xQS8P98EeaIMclfdmhQww" source="_gizx8P98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_fY3R4P99EeaIMclfdmhQww" target="_aihOAP99EeaIMclfdmhQww" source="_Svsx8P99EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_gp5b8P99EeaIMclfdmhQww" target="_Svsx8P99EeaIMclfdmhQww" source="_LY0rAP99EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Jw840P9-EeaIMclfdmhQww" target="_F15_kP9-EeaIMclfdmhQww" source="_4xQS8P98EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Oz7qgP9-EeaIMclfdmhQww" name="[parameters OK]" target="_LY0rAP99EeaIMclfdmhQww" source="_F15_kP9-EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_akix0P9-EeaIMclfdmhQww" target="_XkF4kP9-EeaIMclfdmhQww" source="_aihOAP99EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_rtl9cP9-EeaIMclfdmhQww" name="[Data NO OK]" target="_kZe2oP9-EeaIMclfdmhQww" source="_BvLXkP96EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wRwsMP9-EeaIMclfdmhQww" name="[parameters NO OK]" target="_kZe2oP9-EeaIMclfdmhQww" source="_F15_kP9-EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_8UdpEP9-EeaIMclfdmhQww" target="_fu9BMP9-EeaIMclfdmhQww" source="_XkF4kP9-EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="__a6coP9-EeaIMclfdmhQww" target="_kZe2oP9-EeaIMclfdmhQww" source="_fu9BMP9-EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_FHb6kP9_EeaIMclfdmhQww" target="_BO5iwP9_EeaIMclfdmhQww" source="_kZe2oP9-EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_dNpsoP9_EeaIMclfdmhQww" target="_xSWG0P97EeaIMclfdmhQww" source="_bFIdwP97EeaIMclfdmhQww"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_iVqvUP9_EeaIMclfdmhQww" name="[Data OK]" target="_bFIdwP97EeaIMclfdmhQww" source="_BvLXkP96EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_kdl0MP92EeaIMclfdmhQww" name="Client_Computer" node="_gVK7YP94EeaIMclfdmhQww _2BRbcP94EeaIMclfdmhQww __NghgP94EeaIMclfdmhQww _FjJ08P95EeaIMclfdmhQww _kZe2oP9-EeaIMclfdmhQww _BO5iwP9_EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_lzG1oP92EeaIMclfdmhQww" name="Client_Administrator" node="_bFIdwP97EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_na1ocP92EeaIMclfdmhQww" name="Core_Administrator" node="_xSWG0P97EeaIMclfdmhQww _BCfl0P98EeaIMclfdmhQww _Hg2JUP98EeaIMclfdmhQww _POGI4P98EeaIMclfdmhQww _fu9BMP9-EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_pFiPsP92EeaIMclfdmhQww" name="Inst_Identificator" node="_YJdhYP98EeaIMclfdmhQww _gizx8P98EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_rFBbMP92EeaIMclfdmhQww" name="Inst_Driver" node="_4xQS8P98EeaIMclfdmhQww _LY0rAP99EeaIMclfdmhQww _F15_kP9-EeaIMclfdmhQww"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_sm5doP92EeaIMclfdmhQww" name="Antenna_Inst" node="_Svsx8P99EeaIMclfdmhQww _aihOAP99EeaIMclfdmhQww _XkF4kP9-EeaIMclfdmhQww"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_gVK7YP94EeaIMclfdmhQww" name="" outgoing="_OYzxkP96EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_2BRbcP94EeaIMclfdmhQww" name="Recibir petición del User" incoming="_OYzxkP96EeaIMclfdmhQww" outgoing="_Pvrd4P96EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="__NghgP94EeaIMclfdmhQww" name="Mostrar pantalla de opciones" incoming="_Pvrd4P96EeaIMclfdmhQww" outgoing="_SKRRAP96EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_FjJ08P95EeaIMclfdmhQww" name="Capturar datos ingresados" incoming="_SKRRAP96EeaIMclfdmhQww" outgoing="_O7FiwP97EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ZLV8gP95EeaIMclfdmhQww" name="Validar datos" incoming="_O7FiwP97EeaIMclfdmhQww" outgoing="_dr0ooP96EeaIMclfdmhQww"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_BvLXkP96EeaIMclfdmhQww" name="" incoming="_dr0ooP96EeaIMclfdmhQww" outgoing="_rtl9cP9-EeaIMclfdmhQww _iVqvUP9_EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_bFIdwP97EeaIMclfdmhQww" name="Capturar datos ingresados" incoming="_iVqvUP9_EeaIMclfdmhQww" outgoing="_dNpsoP9_EeaIMclfdmhQww" inPartition="_lzG1oP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xSWG0P97EeaIMclfdmhQww" name="Generar Archivo de Configuración" incoming="_dNpsoP9_EeaIMclfdmhQww" outgoing="_tN_EEP98EeaIMclfdmhQww" inPartition="_na1ocP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BCfl0P98EeaIMclfdmhQww" name="Codificar datos en formato XML" incoming="_tN_EEP98EeaIMclfdmhQww" outgoing="_vYRKUP98EeaIMclfdmhQww" inPartition="_na1ocP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Hg2JUP98EeaIMclfdmhQww" name="Insertar los datos en el archivo" incoming="_vYRKUP98EeaIMclfdmhQww" outgoing="_wRQn0P98EeaIMclfdmhQww" inPartition="_na1ocP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_POGI4P98EeaIMclfdmhQww" name="Establecer modo de ejecución" incoming="_wRQn0P98EeaIMclfdmhQww" outgoing="_xZqaUP98EeaIMclfdmhQww" inPartition="_na1ocP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_YJdhYP98EeaIMclfdmhQww" name="Identificar parámatros del archivo" incoming="_xZqaUP98EeaIMclfdmhQww" outgoing="_15pMoP98EeaIMclfdmhQww" inPartition="_pFiPsP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_gizx8P98EeaIMclfdmhQww" name="Identificar instrumento de destino" incoming="_15pMoP98EeaIMclfdmhQww" outgoing="_71_PQP98EeaIMclfdmhQww" inPartition="_pFiPsP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_4xQS8P98EeaIMclfdmhQww" name="Procesar parámetros" incoming="_71_PQP98EeaIMclfdmhQww" outgoing="_Jw840P9-EeaIMclfdmhQww" inPartition="_rFBbMP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_LY0rAP99EeaIMclfdmhQww" name="Enviar a instrumento" incoming="_Oz7qgP9-EeaIMclfdmhQww" outgoing="_gp5b8P99EeaIMclfdmhQww" inPartition="_rFBbMP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Svsx8P99EeaIMclfdmhQww" name="Procesar parámetros" incoming="_gp5b8P99EeaIMclfdmhQww" outgoing="_fY3R4P99EeaIMclfdmhQww" inPartition="_sm5doP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_aihOAP99EeaIMclfdmhQww" name="Ejecutar acción" incoming="_fY3R4P99EeaIMclfdmhQww" outgoing="_akix0P9-EeaIMclfdmhQww" inPartition="_sm5doP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_F15_kP9-EeaIMclfdmhQww" name="" incoming="_Jw840P9-EeaIMclfdmhQww" outgoing="_Oz7qgP9-EeaIMclfdmhQww _wRwsMP9-EeaIMclfdmhQww" inPartition="_rFBbMP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_XkF4kP9-EeaIMclfdmhQww" name="Enviar ACK" incoming="_akix0P9-EeaIMclfdmhQww" outgoing="_8UdpEP9-EeaIMclfdmhQww" inPartition="_sm5doP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_fu9BMP9-EeaIMclfdmhQww" name="Finalizar ejecución" incoming="_8UdpEP9-EeaIMclfdmhQww" outgoing="__a6coP9-EeaIMclfdmhQww" inPartition="_na1ocP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_kZe2oP9-EeaIMclfdmhQww" name="Mostrar mensaje de estado" incoming="_rtl9cP9-EeaIMclfdmhQww _wRwsMP9-EeaIMclfdmhQww __a6coP9-EeaIMclfdmhQww" outgoing="_FHb6kP9_EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_BO5iwP9_EeaIMclfdmhQww" name="" incoming="_FHb6kP9_EeaIMclfdmhQww" inPartition="_kdl0MP92EeaIMclfdmhQww"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
