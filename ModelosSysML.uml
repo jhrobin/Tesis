@@ -988,6 +988,10 @@ CU &quot;Generar Archivo de Configuración&quot;</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_LYZRsPkxEear_t0tlxV5Cg" annotatedElement="_AL_DoPkxEear_t0tlxV5Cg">
         <body>Ejecución fuera del contexto del SCS.</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ZckDwABHEeeGoNqqH-UIOA">
+        <body>CORREGIR: Agregar la InternalDB de donde se busca el TLE_file para cargarlo en la GUI y luego enviar a propagarlo.
+</body>
+      </ownedComment>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_1Px8IPktEear_t0tlxV5Cg" name="User" coveredBy="_MQRcQPkuEear_t0tlxV5Cg _xBUswPkvEear_t0tlxV5Cg _eOhZAPnHEeamKcQA5PpI-A _h5KewPnHEeamKcQA5PpI-A _h5OJIPnHEeamKcQA5PpI-A _xm3fAPnNEeamKcQA5PpI-A"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_1hbs0PktEear_t0tlxV5Cg" name="Client_Computer" coveredBy="_MQRcQfkuEear_t0tlxV5Cg _QAEHwfkuEear_t0tlxV5Cg _QAEHwPkuEear_t0tlxV5Cg _q6twUfkuEear_t0tlxV5Cg _5-kxEfkuEear_t0tlxV5Cg _vZJ1EPkvEear_t0tlxV5Cg _vZJOAfkvEear_t0tlxV5Cg _xBUFsPkvEear_t0tlxV5Cg _AL_DoPkxEear_t0tlxV5Cg _eOgx8PnHEeamKcQA5PpI-A _xm3fAfnNEeamKcQA5PpI-A _0RIF0PnNEeamKcQA5PpI-A _0RJ7APnNEeamKcQA5PpI-A"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_1zXxYPktEear_t0tlxV5Cg" name="Client_Administrator" coveredBy="_5-lYIPkuEear_t0tlxV5Cg _-hEr4vkuEear_t0tlxV5Cg _-hEr4fkuEear_t0tlxV5Cg _AQgCIPkvEear_t0tlxV5Cg _8BHlsPkwEear_t0tlxV5Cg _9Ym9EPkwEear_t0tlxV5Cg _9YmWAPkwEear_t0tlxV5Cg _AL91gPkxEear_t0tlxV5Cg"/>
@@ -999,10 +1003,10 @@ CU &quot;Generar Archivo de Configuración&quot;</body>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eOgx8PnHEeamKcQA5PpI-A" name="MessageSend11" covered="_1hbs0PktEear_t0tlxV5Cg" message="_eOcggPnHEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_h5KewPnHEeamKcQA5PpI-A" name="ActionExecSpec9Start" covered="_1Px8IPktEear_t0tlxV5Cg" execution="_h5OJIPnHEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_h5OJIPnHEeamKcQA5PpI-A" name="ActionExecSpec9" covered="_1Px8IPktEear_t0tlxV5Cg" finish="_xm3fAPnNEeamKcQA5PpI-A" start="_h5KewPnHEeamKcQA5PpI-A"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eOhZAPnHEeamKcQA5PpI-A" name="MessageRecv11" covered="_1Px8IPktEear_t0tlxV5Cg" message="_eOcggPnHEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_QAEHwfkuEear_t0tlxV5Cg" name="ActionExecSpecFinish" covered="_1hbs0PktEear_t0tlxV5Cg" execution="_QAEHwPkuEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0RJ7APnNEeamKcQA5PpI-A" name="ActionExecSpec1Start" covered="_1hbs0PktEear_t0tlxV5Cg" execution="_q6twUfkuEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eOhZAPnHEeamKcQA5PpI-A" name="MessageRecv11" covered="_1Px8IPktEear_t0tlxV5Cg" message="_eOcggPnHEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xm3fAPnNEeamKcQA5PpI-A" name="MessageSend12" covered="_1Px8IPktEear_t0tlxV5Cg" message="_xm2Q4PnNEeamKcQA5PpI-A"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_0RJ7APnNEeamKcQA5PpI-A" name="ActionExecSpec1Start" covered="_1hbs0PktEear_t0tlxV5Cg" execution="_q6twUfkuEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_q6twUfkuEear_t0tlxV5Cg" name="ActionExecSpec1" covered="_1hbs0PktEear_t0tlxV5Cg" finish="_5-kxEfkuEear_t0tlxV5Cg" start="_0RJ7APnNEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xm3fAfnNEeamKcQA5PpI-A" name="MessageRecv12" covered="_1hbs0PktEear_t0tlxV5Cg" message="_xm2Q4PnNEeamKcQA5PpI-A"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5-kxEfkuEear_t0tlxV5Cg" name="MessageSend4" covered="_1hbs0PktEear_t0tlxV5Cg" message="_5-kxEPkuEear_t0tlxV5Cg"/>
@@ -1011,25 +1015,25 @@ CU &quot;Generar Archivo de Configuración&quot;</body>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5-lYIPkuEear_t0tlxV5Cg" name="MessageRecv4" covered="_1zXxYPktEear_t0tlxV5Cg" message="_5-kxEPkuEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AQgCIPkvEear_t0tlxV5Cg" name="MessageSend5" covered="_1zXxYPktEear_t0tlxV5Cg" message="_AQfbEPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_EdVO8PkvEear_t0tlxV5Cg" name="ActionExecSpec5" covered="_2DreQPktEear_t0tlxV5Cg" finish="_EdVO8fkvEear_t0tlxV5Cg" start="_e3GYAPkvEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AQgpMPkvEear_t0tlxV5Cg" name="MessageRecv5" covered="_2DreQPktEear_t0tlxV5Cg" message="_AQfbEPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_-hEr4vkuEear_t0tlxV5Cg" name="ActionExecSpec4Finish" covered="_1zXxYPktEear_t0tlxV5Cg" execution="_-hEr4fkuEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AQgpMPkvEear_t0tlxV5Cg" name="MessageRecv5" covered="_2DreQPktEear_t0tlxV5Cg" message="_AQfbEPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e3GYAPkvEear_t0tlxV5Cg" name="MessageSend6" covered="_2DreQPktEear_t0tlxV5Cg" message="_e3Fw8PkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_hrE7gPkvEear_t0tlxV5Cg" name="ActionExecSpec6" covered="_2UF40PktEear_t0tlxV5Cg" finish="_hrE7gfkvEear_t0tlxV5Cg" start="_8BG-oPkwEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_e3GYAfkvEear_t0tlxV5Cg" name="MessageRecv6" covered="_2UF40PktEear_t0tlxV5Cg" message="_e3Fw8PkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_EdVO8fkvEear_t0tlxV5Cg" name="ActionExecSpec5Finish" covered="_2DreQPktEear_t0tlxV5Cg" execution="_EdVO8PkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8BG-oPkwEear_t0tlxV5Cg" name="MessageSend9" covered="_2UF40PktEear_t0tlxV5Cg" message="_8BFJcPkwEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_9YmWAPkwEear_t0tlxV5Cg" name="ActionExecSpec8" covered="_1zXxYPktEear_t0tlxV5Cg" finish="_9Ym9EPkwEear_t0tlxV5Cg" start="_AL91gPkxEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_oUb1IPkvEear_t0tlxV5Cg" name="ActionExecSpec6Start" covered="_2UF40PktEear_t0tlxV5Cg" execution="_hrE7gPkvEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7RA-cPkwEear_t0tlxV5Cg" name="ActionExecSpec6Start" covered="_2UF40PktEear_t0tlxV5Cg" execution="_hrE7gPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8BHlsPkwEear_t0tlxV5Cg" name="MessageRecv9" covered="_1zXxYPktEear_t0tlxV5Cg" message="_8BFJcPkwEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_7RA-cPkwEear_t0tlxV5Cg" name="ActionExecSpec6Start" covered="_2UF40PktEear_t0tlxV5Cg" execution="_hrE7gPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_hrE7gfkvEear_t0tlxV5Cg" name="ActionExecSpec6Finish" covered="_2UF40PktEear_t0tlxV5Cg" execution="_hrE7gPkvEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_oUb1IPkvEear_t0tlxV5Cg" name="ActionExecSpec6Start" covered="_2UF40PktEear_t0tlxV5Cg" execution="_hrE7gPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AL91gPkxEear_t0tlxV5Cg" name="MessageSend10" covered="_1zXxYPktEear_t0tlxV5Cg" message="_AL8AUPkxEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_vZJOAfkvEear_t0tlxV5Cg" name="ActionExecSpec7" covered="_1hbs0PktEear_t0tlxV5Cg" finish="_vZJ1EPkvEear_t0tlxV5Cg" start="_xBUFsPkvEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9Ym9EPkwEear_t0tlxV5Cg" name="ActionExecSpec8Finish" covered="_1zXxYPktEear_t0tlxV5Cg" execution="_9YmWAPkwEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AL_DoPkxEear_t0tlxV5Cg" name="MessageRecv10" covered="_1hbs0PktEear_t0tlxV5Cg" message="_AL8AUPkxEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9Ym9EPkwEear_t0tlxV5Cg" name="ActionExecSpec8Finish" covered="_1zXxYPktEear_t0tlxV5Cg" execution="_9YmWAPkwEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xBUFsPkvEear_t0tlxV5Cg" name="MessageSend8" covered="_1hbs0PktEear_t0tlxV5Cg" message="_xBTeoPkvEear_t0tlxV5Cg"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xBUswPkvEear_t0tlxV5Cg" name="MessageRecv8" covered="_1Px8IPktEear_t0tlxV5Cg" message="_xBTeoPkvEear_t0tlxV5Cg"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_vZJ1EPkvEear_t0tlxV5Cg" name="ActionExecSpec7Finish" covered="_1hbs0PktEear_t0tlxV5Cg" execution="_vZJOAfkvEear_t0tlxV5Cg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xBUswPkvEear_t0tlxV5Cg" name="MessageRecv8" covered="_1Px8IPktEear_t0tlxV5Cg" message="_xBTeoPkvEear_t0tlxV5Cg"/>
       <message xmi:type="uml:Message" xmi:id="_MQQ1MPkuEear_t0tlxV5Cg" name="requestProp_newTLE" messageSort="asynchCall" receiveEvent="_MQRcQfkuEear_t0tlxV5Cg" sendEvent="_MQRcQPkuEear_t0tlxV5Cg"/>
       <message xmi:type="uml:Message" xmi:id="_5-kxEPkuEear_t0tlxV5Cg" name="TLEpropData" messageSort="asynchCall" receiveEvent="_5-lYIPkuEear_t0tlxV5Cg" sendEvent="_5-kxEfkuEear_t0tlxV5Cg"/>
       <message xmi:type="uml:Message" xmi:id="_AQfbEPkvEear_t0tlxV5Cg" name="load_TLEpropData" messageSort="asynchCall" receiveEvent="_AQgpMPkvEear_t0tlxV5Cg" sendEvent="_AQgCIPkvEear_t0tlxV5Cg"/>
@@ -1860,6 +1864,7 @@ Creación de nueva instancia de usuario.</body>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ruA4UAA7EeeGoNqqH-UIOA" name="[storage ERROR]" target="_W7baMAA7EeeGoNqqH-UIOA" source="_b4V1kAA6EeeGoNqqH-UIOA"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_3khzUAA7EeeGoNqqH-UIOA" name="[data NO OK]" target="_W7baMAA7EeeGoNqqH-UIOA" source="_7BIH8AA5EeeGoNqqH-UIOA"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Mo4W4AA8EeeGoNqqH-UIOA" target="_H_VY4AA8EeeGoNqqH-UIOA" source="_0YkqIAA6EeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jgDewABDEeeGoNqqH-UIOA" name="[data OK]" target="_hNLeMAA4EeeGoNqqH-UIOA" source="_au0ToAA4EeeGoNqqH-UIOA"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_VaizEAA3EeeGoNqqH-UIOA" name="Client_Computer" node="_xQjQoAA3EeeGoNqqH-UIOA _10mqoAA3EeeGoNqqH-UIOA _4OfTIAA3EeeGoNqqH-UIOA _AwrWoAA4EeeGoNqqH-UIOA _DFX9IAA4EeeGoNqqH-UIOA _au0ToAA4EeeGoNqqH-UIOA _0YkqIAA6EeeGoNqqH-UIOA _H_VY4AA8EeeGoNqqH-UIOA"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_XtBMAAA3EeeGoNqqH-UIOA" name="Client_Administrator" node="_hNLeMAA4EeeGoNqqH-UIOA _W7baMAA7EeeGoNqqH-UIOA"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_ZNAYEAA3EeeGoNqqH-UIOA" name="Core_Administrator" node="_o5lwQAA4EeeGoNqqH-UIOA _H9rTYAA5EeeGoNqqH-UIOA _7BIH8AA5EeeGoNqqH-UIOA _vW_moAA6EeeGoNqqH-UIOA"/>
@@ -1870,8 +1875,8 @@ Creación de nueva instancia de usuario.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_4OfTIAA3EeeGoNqqH-UIOA" name="Mostrar pantalla de opciones" incoming="_PHpcMAA4EeeGoNqqH-UIOA" outgoing="_RAWDMAA4EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_AwrWoAA4EeeGoNqqH-UIOA" name="Capturar datos ingresados" incoming="_RAWDMAA4EeeGoNqqH-UIOA" outgoing="_SsA60AA4EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_DFX9IAA4EeeGoNqqH-UIOA" name="Validar datos" incoming="_SsA60AA4EeeGoNqqH-UIOA" outgoing="_d8NcsAA4EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_au0ToAA4EeeGoNqqH-UIOA" name="" incoming="_d8NcsAA4EeeGoNqqH-UIOA" outgoing="_6EUE8AA6EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_hNLeMAA4EeeGoNqqH-UIOA" name="Capturar datos validados" outgoing="_r_a4wAA4EeeGoNqqH-UIOA" inPartition="_XtBMAAA3EeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_au0ToAA4EeeGoNqqH-UIOA" name="" incoming="_d8NcsAA4EeeGoNqqH-UIOA" outgoing="_6EUE8AA6EeeGoNqqH-UIOA _jgDewABDEeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_hNLeMAA4EeeGoNqqH-UIOA" name="Capturar datos validados" incoming="_jgDewABDEeeGoNqqH-UIOA" outgoing="_r_a4wAA4EeeGoNqqH-UIOA" inPartition="_XtBMAAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_o5lwQAA4EeeGoNqqH-UIOA" name="Procesar datos cargados" incoming="_r_a4wAA4EeeGoNqqH-UIOA" outgoing="_-Q2MQAA5EeeGoNqqH-UIOA" inPartition="_ZNAYEAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_H9rTYAA5EeeGoNqqH-UIOA" name="Asignar modo de ejecución" incoming="_B8sy8AA6EeeGoNqqH-UIOA" outgoing="_XPROIAA5EeeGoNqqH-UIOA" inPartition="_ZNAYEAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_S3Yn4AA5EeeGoNqqH-UIOA" name="Crear nuevo registro de control" incoming="_XPROIAA5EeeGoNqqH-UIOA" outgoing="_zKnesAA5EeeGoNqqH-UIOA" inPartition="_c3YYEAA3EeeGoNqqH-UIOA"/>
@@ -1885,6 +1890,49 @@ Creación de nueva instancia de usuario.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_0YkqIAA6EeeGoNqqH-UIOA" name="Mostrar mensaje de estado" incoming="_6EUE8AA6EeeGoNqqH-UIOA _arfLcAA7EeeGoNqqH-UIOA" outgoing="_Mo4W4AA8EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:CreateLinkAction" xmi:id="_W7baMAA7EeeGoNqqH-UIOA" name="" incoming="_f17QAAA7EeeGoNqqH-UIOA _ruA4UAA7EeeGoNqqH-UIOA _3khzUAA7EeeGoNqqH-UIOA" outgoing="_arfLcAA7EeeGoNqqH-UIOA" inPartition="_XtBMAAA3EeeGoNqqH-UIOA"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_H_VY4AA8EeeGoNqqH-UIOA" name="" incoming="_Mo4W4AA8EeeGoNqqH-UIOA" inPartition="_VaizEAA3EeeGoNqqH-UIOA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_EC3KAABBEeeGoNqqH-UIOA" name="Cargar y propagar TLE en GUI" node="_vLYvYABBEeeGoNqqH-UIOA _xfZZYABBEeeGoNqqH-UIOA _1F0GcABBEeeGoNqqH-UIOA _5MSXIABCEeeGoNqqH-UIOA _B05LsABDEeeGoNqqH-UIOA _E1rcIABDEeeGoNqqH-UIOA _eBe9QABDEeeGoNqqH-UIOA _xVztoABDEeeGoNqqH-UIOA _8RrlUABDEeeGoNqqH-UIOA _FGwIkABEEeeGoNqqH-UIOA _a7JB8ABEEeeGoNqqH-UIOA _h_o_cABEEeeGoNqqH-UIOA _C6vHgABFEeeGoNqqH-UIOA _j0QiQABFEeeGoNqqH-UIOA _vp2QMABFEeeGoNqqH-UIOA _Bw1qwABGEeeGoNqqH-UIOA _hoQvUABGEeeGoNqqH-UIOA" group="_Tm7U0ABBEeeGoNqqH-UIOA _U5VX4ABBEeeGoNqqH-UIOA _XOQn4ABBEeeGoNqqH-UIOA _YygB0ABBEeeGoNqqH-UIOA _aFO_kABCEeeGoNqqH-UIOA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="__-424ABDEeeGoNqqH-UIOA" target="_8RrlUABDEeeGoNqqH-UIOA" source="_xVztoABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Jf7IQABEEeeGoNqqH-UIOA" target="_FGwIkABEEeeGoNqqH-UIOA" source="_8RrlUABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_MEgk4ABEEeeGoNqqH-UIOA" target="_xfZZYABBEeeGoNqqH-UIOA" source="_vLYvYABBEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NafgYABEEeeGoNqqH-UIOA" target="_1F0GcABBEeeGoNqqH-UIOA" source="_xfZZYABBEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_RQ80kABEEeeGoNqqH-UIOA" target="_B05LsABDEeeGoNqqH-UIOA" source="_5MSXIABCEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_S2wUwABEEeeGoNqqH-UIOA" target="_E1rcIABDEeeGoNqqH-UIOA" source="_B05LsABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_VP59cABEEeeGoNqqH-UIOA" target="_eBe9QABDEeeGoNqqH-UIOA" source="_E1rcIABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ewj0UABEEeeGoNqqH-UIOA" name="[process_status = OK]" target="_a7JB8ABEEeeGoNqqH-UIOA" source="_FGwIkABEEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kpXawABEEeeGoNqqH-UIOA" target="_h_o_cABEEeeGoNqqH-UIOA" source="_a7JB8ABEEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nlgbwABEEeeGoNqqH-UIOA" name="[data OK]" target="_xVztoABDEeeGoNqqH-UIOA" source="_eBe9QABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JQBOkABFEeeGoNqqH-UIOA" name="[process_status = NO OK]" target="_C6vHgABFEeeGoNqqH-UIOA" source="_FGwIkABEEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_p_WLgABFEeeGoNqqH-UIOA" target="_j0QiQABFEeeGoNqqH-UIOA" source="_1F0GcABBEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_y8jXEABFEeeGoNqqH-UIOA" name="[TLE_file found]" target="_5MSXIABCEeeGoNqqH-UIOA" source="_vp2QMABFEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3fLNsABFEeeGoNqqH-UIOA" target="_vp2QMABFEeeGoNqqH-UIOA" source="_j0QiQABFEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_IZsOEABGEeeGoNqqH-UIOA" name="[data NO OK]" target="_Bw1qwABGEeeGoNqqH-UIOA" source="_eBe9QABDEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_PQixIABGEeeGoNqqH-UIOA" target="_Bw1qwABGEeeGoNqqH-UIOA" source="_C6vHgABFEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_UrHjcABGEeeGoNqqH-UIOA" name="[TLE_file NOT found]" target="_Bw1qwABGEeeGoNqqH-UIOA" source="_vp2QMABFEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_j7mD4ABGEeeGoNqqH-UIOA" target="_hoQvUABGEeeGoNqqH-UIOA" source="_Bw1qwABGEeeGoNqqH-UIOA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_D5tmUABHEeeGoNqqH-UIOA" target="_C6vHgABFEeeGoNqqH-UIOA" source="_h_o_cABEEeeGoNqqH-UIOA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_Tm7U0ABBEeeGoNqqH-UIOA" name="Client_Computer" node="_vLYvYABBEeeGoNqqH-UIOA _xfZZYABBEeeGoNqqH-UIOA _1F0GcABBEeeGoNqqH-UIOA _5MSXIABCEeeGoNqqH-UIOA _B05LsABDEeeGoNqqH-UIOA _E1rcIABDEeeGoNqqH-UIOA _eBe9QABDEeeGoNqqH-UIOA _Bw1qwABGEeeGoNqqH-UIOA _hoQvUABGEeeGoNqqH-UIOA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_U5VX4ABBEeeGoNqqH-UIOA" name="Client_Administrator" node="_xVztoABDEeeGoNqqH-UIOA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_XOQn4ABBEeeGoNqqH-UIOA" name="Core_Administrator" node="_8RrlUABDEeeGoNqqH-UIOA _FGwIkABEEeeGoNqqH-UIOA _C6vHgABFEeeGoNqqH-UIOA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_YygB0ABBEeeGoNqqH-UIOA" name="Files_Repository" node="_a7JB8ABEEeeGoNqqH-UIOA _h_o_cABEEeeGoNqqH-UIOA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_aFO_kABCEeeGoNqqH-UIOA" name="InternalDB" node="_j0QiQABFEeeGoNqqH-UIOA _vp2QMABFEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_vLYvYABBEeeGoNqqH-UIOA" name="" outgoing="_MEgk4ABEEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xfZZYABBEeeGoNqqH-UIOA" name="Recibir petición del User" incoming="_MEgk4ABEEeeGoNqqH-UIOA" outgoing="_NafgYABEEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_1F0GcABBEeeGoNqqH-UIOA" name="Mostrar pantalla de opciones" incoming="_NafgYABEEeeGoNqqH-UIOA" outgoing="_p_WLgABFEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5MSXIABCEeeGoNqqH-UIOA" name="Cargar archivo TLE" incoming="_y8jXEABFEeeGoNqqH-UIOA" outgoing="_RQ80kABEEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_B05LsABDEeeGoNqqH-UIOA" name="Capturar datos ingresados" incoming="_RQ80kABEEeeGoNqqH-UIOA" outgoing="_S2wUwABEEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_E1rcIABDEeeGoNqqH-UIOA" name="Validar datos" incoming="_S2wUwABEEeeGoNqqH-UIOA" outgoing="_VP59cABEEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_eBe9QABDEeeGoNqqH-UIOA" name="" incoming="_VP59cABEEeeGoNqqH-UIOA" outgoing="_nlgbwABEEeeGoNqqH-UIOA _IZsOEABGEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xVztoABDEeeGoNqqH-UIOA" name="Capturar datos validados" incoming="_nlgbwABEEeeGoNqqH-UIOA" outgoing="__-424ABDEeeGoNqqH-UIOA" inPartition="_U5VX4ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_8RrlUABDEeeGoNqqH-UIOA" name="Propagar archivo TLE" incoming="__-424ABDEeeGoNqqH-UIOA" outgoing="_Jf7IQABEEeeGoNqqH-UIOA" inPartition="_XOQn4ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_FGwIkABEEeeGoNqqH-UIOA" name="" incoming="_Jf7IQABEEeeGoNqqH-UIOA" outgoing="_ewj0UABEEeeGoNqqH-UIOA _JQBOkABFEeeGoNqqH-UIOA" inPartition="_XOQn4ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_a7JB8ABEEeeGoNqqH-UIOA" name="Almacenar archivo propagado" incoming="_ewj0UABEEeeGoNqqH-UIOA" outgoing="_kpXawABEEeeGoNqqH-UIOA" inPartition="_YygB0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_h_o_cABEEeeGoNqqH-UIOA" name="Enviar ACK" incoming="_kpXawABEEeeGoNqqH-UIOA" outgoing="_D5tmUABHEeeGoNqqH-UIOA" inPartition="_YygB0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_C6vHgABFEeeGoNqqH-UIOA" name="Finalizar proceso" incoming="_JQBOkABFEeeGoNqqH-UIOA _D5tmUABHEeeGoNqqH-UIOA" outgoing="_PQixIABGEeeGoNqqH-UIOA" inPartition="_XOQn4ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_j0QiQABFEeeGoNqqH-UIOA" name="Buscar archivo TLE" incoming="_p_WLgABFEeeGoNqqH-UIOA" outgoing="_3fLNsABFEeeGoNqqH-UIOA" inPartition="_aFO_kABCEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_vp2QMABFEeeGoNqqH-UIOA" name="" incoming="_3fLNsABFEeeGoNqqH-UIOA" outgoing="_y8jXEABFEeeGoNqqH-UIOA _UrHjcABGEeeGoNqqH-UIOA" inPartition="_aFO_kABCEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Bw1qwABGEeeGoNqqH-UIOA" name="Mostrar mensaje de estado" incoming="_IZsOEABGEeeGoNqqH-UIOA _PQixIABGEeeGoNqqH-UIOA _UrHjcABGEeeGoNqqH-UIOA" outgoing="_j7mD4ABGEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_hoQvUABGEeeGoNqqH-UIOA" name="" incoming="_j7mD4ABGEeeGoNqqH-UIOA" inPartition="_Tm7U0ABBEeeGoNqqH-UIOA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
