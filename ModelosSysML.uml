@@ -44,10 +44,19 @@ Extend point: Tipo de conexión con la anena</body>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5g0bcGSsEeaQG6CvTBN4Qg" name="Files_Repository" type="_5tp9kGSsEeaQG6CvTBN4Qg" aggregation="composite" association="_5tqkoGSsEeaQG6CvTBN4Qg"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_7D7QIGSwEeaQG6CvTBN4Qg" name="flowport1" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_BmCc0GSyEeaQG6CvTBN4Qg" name="flowport3" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_XQuBUGVGEeah-PZgd78gpA" name="Client_Administrator" type="_Xf0NQGVGEeah-PZgd78gpA" aggregation="composite" association="_Xf8wIGVGEeah-PZgd78gpA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XQuBUGVGEeah-PZgd78gpA" name="Client_Administrator" type="_Xf0NQGVGEeah-PZgd78gpA" aggregation="composite" association="_Xf8wIGVGEeah-PZgd78gpA">
+        <qualifier xmi:type="uml:Port" xmi:id="_OKESsA5nEeewWvI4iyci9A" name="Port1" aggregation="composite"/>
+      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_hVFagGVMEeah-PZgd78gpA" name="flowport5" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_NtbpAGVNEeah-PZgd78gpA" name="flowport6" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_1Jc8gPnvEeamKcQA5PpI-A" name="User_Client_DB" type="_1r7-gPnvEeamKcQA5PpI-A" aggregation="composite" association="_1sVnIPnvEeamKcQA5PpI-A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1Jc8gPnvEeamKcQA5PpI-A" name="User_Repository" type="_1r7-gPnvEeamKcQA5PpI-A" aggregation="composite" association="_1sVnIPnvEeamKcQA5PpI-A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ega2EA5nEeewWvI4iyci9A" name="Inst_Identificator" type="_84b8gGbmEeaLFIjgYj2DmA" aggregation="composite" association="_egdSVA5nEeewWvI4iyci9A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B80V4A5rEeewWvI4iyci9A" name="Mission_Repository" type="_CMQgEA5rEeewWvI4iyci9A" aggregation="composite" association="_CMSVQA5rEeewWvI4iyci9A">
+        <qualifier xmi:type="uml:Property" xmi:id="_UzGRoA5mEeewWvI4iyci9A" name="Mission_Id" type="_VGHUQA5mEeewWvI4iyci9A" aggregation="composite" association="_VGfHsA5mEeewWvI4iyci9A">
+          <qualifier xmi:type="uml:Property" xmi:id="_dYkdMA5nEeewWvI4iyci9A" name="Inst_Identificator" type="_84b8gGbmEeaLFIjgYj2DmA" aggregation="composite"/>
+        </qualifier>
+        <qualifier xmi:type="uml:Property" xmi:id="_rjQk0A5oEeewWvI4iyci9A" name="Pass_Mission" type="_ruQ68A5oEeewWvI4iyci9A" aggregation="composite" association="_ruSJEA5oEeewWvI4iyci9A"/>
+      </ownedAttribute>
       <ownedConnector xmi:type="uml:Connector" xmi:id="__iCFEGSuEeaQG6CvTBN4Qg" name="Data_files">
         <end xmi:type="uml:ConnectorEnd" xmi:id="__iCFEWSuEeaQG6CvTBN4Qg" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_8yXZ0GSuEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="__iCFEmSuEeaQG6CvTBN4Qg" partWithPort="_5g0bcGSsEeaQG6CvTBN4Qg" role="_952mUGSuEeaQG6CvTBN4Qg"/>
@@ -60,11 +69,11 @@ Extend point: Tipo de conexión con la anena</body>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_zWfZMGVGEeah-PZgd78gpA" role="_BmCc0GSyEeaQG6CvTBN4Qg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_zWfZMWVGEeah-PZgd78gpA" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_v_avsGVGEeah-PZgd78gpA"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_ks0LUGVMEeah-PZgd78gpA" name="TLE_Repository_link">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_ks0LUGVMEeah-PZgd78gpA" name="InternalDB_link">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_ks0yYGVMEeah-PZgd78gpA" role="_hVFagGVMEeah-PZgd78gpA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_ks0yYWVMEeah-PZgd78gpA" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_ie2e8GVMEeah-PZgd78gpA"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_PsjoIGVNEeah-PZgd78gpA" name="Schedule_data">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_PsjoIGVNEeah-PZgd78gpA" name="ScheduleDB_link">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_PskPMGVNEeah-PZgd78gpA" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_MO-G8GVNEeah-PZgd78gpA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_PskPMWVNEeah-PZgd78gpA" role="_NtbpAGVNEeah-PZgd78gpA"/>
       </ownedConnector>
@@ -76,9 +85,13 @@ Extend point: Tipo de conexión con la anena</body>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_MHuHIH0BEeaFbaOq4OILlg" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_AWK7sGVHEeah-PZgd78gpA"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_MHuHIX0BEeaFbaOq4OILlg" partWithPort="__pVuUGSrEeaQG6CvTBN4Qg" role="_-9Oy0GVGEeah-PZgd78gpA"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="__dQuoPnvEeamKcQA5PpI-A" name="Connector3">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="__dafoPnvEeamKcQA5PpI-A" partWithPort="_1Jc8gPnvEeamKcQA5PpI-A" role="_8lAIEPnvEeamKcQA5PpI-A"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="__dafofnvEeamKcQA5PpI-A" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_YiPEcPnvEeamKcQA5PpI-A"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_hNxQUA5rEeewWvI4iyci9A" name="Connector3">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_hNyecA5rEeewWvI4iyci9A" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_YiPEcPnvEeamKcQA5PpI-A"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_hNyecQ5rEeewWvI4iyci9A" partWithPort="_1Jc8gPnvEeamKcQA5PpI-A" role="_8lAIEPnvEeamKcQA5PpI-A"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_m-tUMA5rEeewWvI4iyci9A" name="Connector4">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_m-t7QA5rEeewWvI4iyci9A" partWithPort="_XQuBUGVGEeah-PZgd78gpA" role="_OKESsA5nEeewWvI4iyci9A"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_m-t7QQ5rEeewWvI4iyci9A" partWithPort="_B80V4A5rEeewWvI4iyci9A" role="_lbJPsA5rEeewWvI4iyci9A"/>
       </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_P1g3cGSrEeaQG6CvTBN4Qg" name="Block1">
@@ -2193,6 +2206,45 @@ Creación de nueva instancia de usuario.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_2bDlUAj4EeeI8sKkaUxbwQ" name="Mostrar mensaje de estado" incoming="_54IwMAj4EeeI8sKkaUxbwQ _7iQvsAj4EeeI8sKkaUxbwQ" outgoing="_gy3fcAj5EeeI8sKkaUxbwQ" inPartition="_CNvtEAj1EeeI8sKkaUxbwQ"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_e-ND4Aj5EeeI8sKkaUxbwQ" name="" incoming="_gy3fcAj5EeeI8sKkaUxbwQ" inPartition="_CNvtEAj1EeeI8sKkaUxbwQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VGHUQA5mEeewWvI4iyci9A" name="Block14"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VGfHsA5mEeewWvI4iyci9A" name="Association11" memberEnd="_UzGRoA5mEeewWvI4iyci9A _VGfHsw5mEeewWvI4iyci9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VGfHsQ5mEeewWvI4iyci9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VGfHsg5mEeewWvI4iyci9A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VGfHsw5mEeewWvI4iyci9A" name="station control system (scs)" type="_3-CsAGSqEeaQG6CvTBN4Qg" association="_VGfHsA5mEeewWvI4iyci9A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_egdSVA5nEeewWvI4iyci9A" name="Association6" memberEnd="_egdSVw5nEeewWvI4iyci9A _ega2EA5nEeewWvI4iyci9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_egdSVQ5nEeewWvI4iyci9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_egdSVg5nEeewWvI4iyci9A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_egdSVw5nEeewWvI4iyci9A" name="block1" type="_3-CsAGSqEeaQG6CvTBN4Qg" association="_egdSVA5nEeewWvI4iyci9A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_f2OLYA5nEeewWvI4iyci9A" name="Block15"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pof9wA5nEeewWvI4iyci9A" name="Block16"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ruQ68A5oEeewWvI4iyci9A" name="Block17"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ruSJEA5oEeewWvI4iyci9A" name="Association12" memberEnd="_rjQk0A5oEeewWvI4iyci9A _ruSJEw5oEeewWvI4iyci9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ruSJEQ5oEeewWvI4iyci9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ruSJEg5oEeewWvI4iyci9A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ruSJEw5oEeewWvI4iyci9A" name="station control system (scs)" type="_3-CsAGSqEeaQG6CvTBN4Qg" association="_ruSJEA5oEeewWvI4iyci9A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CMQgEA5rEeewWvI4iyci9A" name="Block18">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_lbJPsA5rEeewWvI4iyci9A" name="Port1" aggregation="composite"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_bmAWkA5rEeewWvI4iyci9A" name="Connector1">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_bmA9oA5rEeewWvI4iyci9A" role="_UzGRoA5mEeewWvI4iyci9A"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_bmA9oQ5rEeewWvI4iyci9A" role="_rjQk0A5oEeewWvI4iyci9A"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_rGQYYA5rEeewWvI4iyci9A" name="Connector2">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rGQYYQ5rEeewWvI4iyci9A" role="_lbJPsA5rEeewWvI4iyci9A"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rGQYYg5rEeewWvI4iyci9A" role="_UzGRoA5mEeewWvI4iyci9A"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CMSVQA5rEeewWvI4iyci9A" name="Association13" memberEnd="_B80V4A5rEeewWvI4iyci9A _CMSVQw5rEeewWvI4iyci9A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CMSVQQ5rEeewWvI4iyci9A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CMSVQg5rEeewWvI4iyci9A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CMSVQw5rEeewWvI4iyci9A" name="station control system (scs)" type="_3-CsAGSqEeaQG6CvTBN4Qg" association="_CMSVQA5rEeewWvI4iyci9A"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -2289,4 +2341,9 @@ Creación de nueva instancia de usuario.</body>
   <Blocks:Block xmi:id="_ZlljUHRiEeaYbPgMtC8k1Q" base_Class="_ZligAHRiEeaYbPgMtC8k1Q"/>
   <Blocks:Block xmi:id="_Dx1RMHRkEeaYbPgMtC8k1Q" base_Class="_Dx0qIHRkEeaYbPgMtC8k1Q"/>
   <Blocks:Block xmi:id="_1sFIcPnvEeamKcQA5PpI-A" base_Class="_1r7-gPnvEeamKcQA5PpI-A"/>
+  <Blocks:Block xmi:id="_VGJJcA5mEeewWvI4iyci9A" base_Class="_VGHUQA5mEeewWvI4iyci9A"/>
+  <Blocks:Block xmi:id="_f2OycA5nEeewWvI4iyci9A" base_Class="_f2OLYA5nEeewWvI4iyci9A"/>
+  <Blocks:Block xmi:id="_pogk0A5nEeewWvI4iyci9A" base_Class="_pof9wA5nEeewWvI4iyci9A"/>
+  <Blocks:Block xmi:id="_ruRiAA5oEeewWvI4iyci9A" base_Class="_ruQ68A5oEeewWvI4iyci9A"/>
+  <Blocks:Block xmi:id="_CMRHIA5rEeewWvI4iyci9A" base_Class="_CMQgEA5rEeewWvI4iyci9A"/>
 </xmi:XMI>
