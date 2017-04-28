@@ -2302,7 +2302,7 @@ Almacenar las modificaciones.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_u8FhkBPpEeeSgZp8JnN9jQ" name="Capturar solicitud de baja" incoming="_BFJ_wBPqEeeSgZp8JnN9jQ _xOtesBSdEeerjv7o1LY_Gw" outgoing="_JcDZQBPqEeeSgZp8JnN9jQ _xrRe4BSdEeerjv7o1LY_Gw" inPartition="_541YcBPoEeeSgZp8JnN9jQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_9ZTZEBPpEeeSgZp8JnN9jQ" name="Buscar usuarios del sistema" incoming="_JcDZQBPqEeeSgZp8JnN9jQ _xrRe4BSdEeerjv7o1LY_Gw" outgoing="_pnmzYBPtEeeSgZp8JnN9jQ _zW-LsBSdEeerjv7o1LY_Gw" inPartition="_7qZcsBPoEeeSgZp8JnN9jQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_DWLnMBPqEeeSgZp8JnN9jQ" name="Desplegar interfaz con info de los usuarios" incoming="_pnmzYBPtEeeSgZp8JnN9jQ _zW-LsBSdEeerjv7o1LY_Gw" outgoing="_YRw48BSdEeerjv7o1LY_Gw" inPartition="_4yKEQBPoEeeSgZp8JnN9jQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_c9rwYBPrEeeSgZp8JnN9jQ" name="Confirmar modificación" incoming="_YRw48BSdEeerjv7o1LY_Gw" outgoing="_pzassBPrEeeSgZp8JnN9jQ _ZGLYcBSdEeerjv7o1LY_Gw" inPartition="_4yKEQBPoEeeSgZp8JnN9jQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_c9rwYBPrEeeSgZp8JnN9jQ" name="Confirmar eliminación" incoming="_YRw48BSdEeerjv7o1LY_Gw" outgoing="_pzassBPrEeeSgZp8JnN9jQ _ZGLYcBSdEeerjv7o1LY_Gw" inPartition="_4yKEQBPoEeeSgZp8JnN9jQ"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_m-YZQBPrEeeSgZp8JnN9jQ" name="" incoming="_pzassBPrEeeSgZp8JnN9jQ _ZGLYcBSdEeerjv7o1LY_Gw" outgoing="__XTE4BPrEeeSgZp8JnN9jQ _dxnM0BSdEeerjv7o1LY_Gw _2GJHsBSdEeerjv7o1LY_Gw" inPartition="_4yKEQBPoEeeSgZp8JnN9jQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_5cXXgBPrEeeSgZp8JnN9jQ" name="Ejecutar eliminación de datos" incoming="__XTE4BPrEeeSgZp8JnN9jQ _2GJHsBSdEeerjv7o1LY_Gw" outgoing="_2xQhQBSdEeerjv7o1LY_Gw" inPartition="_7qZcsBPoEeeSgZp8JnN9jQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_RfJbEBPsEeeSgZp8JnN9jQ" name="Borrar registros asociados" incoming="_2xQhQBSdEeerjv7o1LY_Gw" outgoing="_7fcNEBPsEeeSgZp8JnN9jQ _43jfYBSdEeerjv7o1LY_Gw" inPartition="_7qZcsBPoEeeSgZp8JnN9jQ"/>
@@ -2866,6 +2866,47 @@ Valida los datos del archivo.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_q2rC0Cw8EeewG46zAgckTA" name="Finalizar proceso" incoming="_uOodICw8EeewG46zAgckTA" outgoing="_14ULUCw8EeewG46zAgckTA" inPartition="_TwlN0Cw4EeewG46zAgckTA"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_wUn5QCw8EeewG46zAgckTA" name="Mensaje de estado" incoming="_14ULUCw8EeewG46zAgckTA" outgoing="_5d4j0Cw8EeewG46zAgckTA" inPartition="_PreZoCw4EeewG46zAgckTA"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_26Ua4Cw8EeewG46zAgckTA" name="" incoming="_5d4j0Cw8EeewG46zAgckTA" inPartition="_PreZoCw4EeewG46zAgckTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_0FVtoCxDEeewG46zAgckTA" name="Baja de Configuración" node="_0tWTYCxEEeewG46zAgckTA _2b9xUCxEEeewG46zAgckTA _lRcwoCxFEeewG46zAgckTA _sfRCMCxFEeewG46zAgckTA _z3plACxFEeewG46zAgckTA _5HIhoCxFEeewG46zAgckTA _Dr0oYCxGEeewG46zAgckTA _UpzzgCxGEeewG46zAgckTA _yxVnwCxGEeewG46zAgckTA _-PhiUCxGEeewG46zAgckTA _Ua-Q0CxHEeewG46zAgckTA _j6f54CxHEeewG46zAgckTA _tHlUgCxHEeewG46zAgckTA _9Sp08CxHEeewG46zAgckTA _96yzACxHEeewG46zAgckTA _VML14CxIEeewG46zAgckTA _bSr6ECxIEeewG46zAgckTA" group="_9RJV4CxDEeewG46zAgckTA _-mQHoCxDEeewG46zAgckTA _AMmaYCxEEeewG46zAgckTA _DltEMCxEEeewG46zAgckTA _E9eIYCxEEeewG46zAgckTA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_IcxO4CxGEeewG46zAgckTA" target="_2b9xUCxEEeewG46zAgckTA" source="_0tWTYCxEEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JytuICxGEeewG46zAgckTA" target="_lRcwoCxFEeewG46zAgckTA" source="_2b9xUCxEEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Kl1NICxGEeewG46zAgckTA" target="_sfRCMCxFEeewG46zAgckTA" source="_lRcwoCxFEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_LrRLMCxGEeewG46zAgckTA" target="_z3plACxFEeewG46zAgckTA" source="_sfRCMCxFEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_OgPNMCxGEeewG46zAgckTA" target="_5HIhoCxFEeewG46zAgckTA" source="_z3plACxFEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QXpawCxGEeewG46zAgckTA" target="_Dr0oYCxGEeewG46zAgckTA" source="_5HIhoCxFEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yRMIECxGEeewG46zAgckTA" target="_UpzzgCxGEeewG46zAgckTA" source="_Dr0oYCxGEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_691IECxGEeewG46zAgckTA" target="_yxVnwCxGEeewG46zAgckTA" source="_UpzzgCxGEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BwRsQCxHEeewG46zAgckTA" target="_-PhiUCxGEeewG46zAgckTA" source="_yxVnwCxGEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZO0aUCxHEeewG46zAgckTA" name="[confirmed = 'Yes']" target="_Ua-Q0CxHEeewG46zAgckTA" source="_-PhiUCxGEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_sW4QUCxHEeewG46zAgckTA" target="_j6f54CxHEeewG46zAgckTA" source="_Ua-Q0CxHEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_0aHG8CxHEeewG46zAgckTA" target="_tHlUgCxHEeewG46zAgckTA" source="_j6f54CxHEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DTZ2cCxIEeewG46zAgckTA" target="_96yzACxHEeewG46zAgckTA" source="_9Sp08CxHEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_KAzikCxIEeewG46zAgckTA" name="[confirmed = 'NO']" target="_9Sp08CxHEeewG46zAgckTA" source="_-PhiUCxGEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_O-3_ECxIEeewG46zAgckTA" target="_9Sp08CxHEeewG46zAgckTA" source="_tHlUgCxHEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_aaFeICxIEeewG46zAgckTA" target="_VML14CxIEeewG46zAgckTA" source="_96yzACxHEeewG46zAgckTA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_eIGoACxIEeewG46zAgckTA" target="_bSr6ECxIEeewG46zAgckTA" source="_VML14CxIEeewG46zAgckTA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_9RJV4CxDEeewG46zAgckTA" name="Client_Computer" node="_0tWTYCxEEeewG46zAgckTA _2b9xUCxEEeewG46zAgckTA _z3plACxFEeewG46zAgckTA _5HIhoCxFEeewG46zAgckTA _yxVnwCxGEeewG46zAgckTA _-PhiUCxGEeewG46zAgckTA _VML14CxIEeewG46zAgckTA _bSr6ECxIEeewG46zAgckTA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_-mQHoCxDEeewG46zAgckTA" name="Client_Administrator" node="_lRcwoCxFEeewG46zAgckTA _Dr0oYCxGEeewG46zAgckTA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_AMmaYCxEEeewG46zAgckTA" name="Core_Administrator" node="_UpzzgCxGEeewG46zAgckTA _Ua-Q0CxHEeewG46zAgckTA _9Sp08CxHEeewG46zAgckTA _96yzACxHEeewG46zAgckTA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_DltEMCxEEeewG46zAgckTA" name="Config_sat" node="_sfRCMCxFEeewG46zAgckTA _j6f54CxHEeewG46zAgckTA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_E9eIYCxEEeewG46zAgckTA" name="Files_Repository" node="_tHlUgCxHEeewG46zAgckTA"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_0tWTYCxEEeewG46zAgckTA" name="" outgoing="_IcxO4CxGEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_2b9xUCxEEeewG46zAgckTA" name="Recibir petición del User" incoming="_IcxO4CxGEeewG46zAgckTA" outgoing="_JytuICxGEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_lRcwoCxFEeewG46zAgckTA" name="Capturar petición" incoming="_JytuICxGEeewG46zAgckTA" outgoing="_Kl1NICxGEeewG46zAgckTA" inPartition="_-mQHoCxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_sfRCMCxFEeewG46zAgckTA" name="Obtener Configuraciones registradas" incoming="_Kl1NICxGEeewG46zAgckTA" outgoing="_LrRLMCxGEeewG46zAgckTA" inPartition="_DltEMCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_z3plACxFEeewG46zAgckTA" name="Desplegar pantalla con datos obtenidos" incoming="_LrRLMCxGEeewG46zAgckTA" outgoing="_OgPNMCxGEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5HIhoCxFEeewG46zAgckTA" name="Capturar configuración seleccionada" incoming="_OgPNMCxGEeewG46zAgckTA" outgoing="_QXpawCxGEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Dr0oYCxGEeewG46zAgckTA" name="Capturar solicitud de baja" incoming="_QXpawCxGEeewG46zAgckTA" outgoing="_yRMIECxGEeewG46zAgckTA" inPartition="_-mQHoCxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_UpzzgCxGEeewG46zAgckTA" name="Procesar datos ingresados" incoming="_yRMIECxGEeewG46zAgckTA" outgoing="_691IECxGEeewG46zAgckTA" inPartition="_AMmaYCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yxVnwCxGEeewG46zAgckTA" name="Confirmar baja de configuración" incoming="_691IECxGEeewG46zAgckTA" outgoing="_BwRsQCxHEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_-PhiUCxGEeewG46zAgckTA" name="" incoming="_BwRsQCxHEeewG46zAgckTA" outgoing="_ZO0aUCxHEeewG46zAgckTA _KAzikCxIEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Ua-Q0CxHEeewG46zAgckTA" name="Ejecutar proceso de eliminación" incoming="_ZO0aUCxHEeewG46zAgckTA" outgoing="_sW4QUCxHEeewG46zAgckTA" inPartition="_AMmaYCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_j6f54CxHEeewG46zAgckTA" name="Eliminar configuración" incoming="_sW4QUCxHEeewG46zAgckTA" outgoing="_0aHG8CxHEeewG46zAgckTA" inPartition="_DltEMCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_tHlUgCxHEeewG46zAgckTA" name="Eliminar Archivos de Config. asociado" incoming="_0aHG8CxHEeewG46zAgckTA" outgoing="_O-3_ECxIEeewG46zAgckTA" inPartition="_E9eIYCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_9Sp08CxHEeewG46zAgckTA" name="" incoming="_KAzikCxIEeewG46zAgckTA _O-3_ECxIEeewG46zAgckTA" outgoing="_DTZ2cCxIEeewG46zAgckTA" inPartition="_AMmaYCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_96yzACxHEeewG46zAgckTA" name="Finalizar proceso" incoming="_DTZ2cCxIEeewG46zAgckTA" outgoing="_aaFeICxIEeewG46zAgckTA" inPartition="_AMmaYCxEEeewG46zAgckTA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_VML14CxIEeewG46zAgckTA" name="Mostrar mensaje de estado" incoming="_aaFeICxIEeewG46zAgckTA" outgoing="_eIGoACxIEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_bSr6ECxIEeewG46zAgckTA" name="" incoming="_eIGoACxIEeewG46zAgckTA" inPartition="_9RJV4CxDEeewG46zAgckTA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
