@@ -2958,6 +2958,56 @@ Valida los datos del archivo.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_DFbu0CzrEee284NYAyQpPw" name="Mostrar mensaje de estado" incoming="_LTxpQCzrEee284NYAyQpPw" outgoing="_SQC30CzrEee284NYAyQpPw" inPartition="_1HdU4CzmEee284NYAyQpPw"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_Nw5L8CzrEee284NYAyQpPw" name="" incoming="_SQC30CzrEee284NYAyQpPw" inPartition="_1HdU4CzmEee284NYAyQpPw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_0aXzICzrEee284NYAyQpPw" name="Determinar pasadas a trackear" node="_sWauUCzsEee284NYAyQpPw _yEcoICzsEee284NYAyQpPw _2sCeUCzsEee284NYAyQpPw _BGUr4CztEee284NYAyQpPw _HYU1cCztEee284NYAyQpPw _NkFNECztEee284NYAyQpPw _WMIA8CztEee284NYAyQpPw _nVmDUCztEee284NYAyQpPw _yP7C4CztEee284NYAyQpPw _3G9DQCztEee284NYAyQpPw _EirokCzuEee284NYAyQpPw _UuJxoCzuEee284NYAyQpPw _bgXFQCzuEee284NYAyQpPw _rhlGICzuEee284NYAyQpPw _3v75YCzuEee284NYAyQpPw _IvDF4CzvEee284NYAyQpPw _FOdvgCz5Eee284NYAyQpPw _kielACz5Eee284NYAyQpPw _-HfQUCz5Eee284NYAyQpPw _QbX3YCz6Eee284NYAyQpPw _Vuf94Cz6Eee284NYAyQpPw" group="_FmPpQCzsEee284NYAyQpPw _GuSPYCzsEee284NYAyQpPw _JDHYwCzsEee284NYAyQpPw _LNrL0CzsEee284NYAyQpPw _NL7oQCzsEee284NYAyQpPw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_s6eoMCztEee284NYAyQpPw" target="_nVmDUCztEee284NYAyQpPw" source="_WMIA8CztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZqLxUCzvEee284NYAyQpPw" target="_yEcoICzsEee284NYAyQpPw" source="_sWauUCzsEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_a6PrACzvEee284NYAyQpPw" target="_2sCeUCzsEee284NYAyQpPw" source="_yEcoICzsEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_UAdZoCz4Eee284NYAyQpPw" target="_BGUr4CztEee284NYAyQpPw" source="_2sCeUCzsEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_aeRKkCz4Eee284NYAyQpPw" target="_HYU1cCztEee284NYAyQpPw" source="_BGUr4CztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_cCnSMCz4Eee284NYAyQpPw" target="_NkFNECztEee284NYAyQpPw" source="_HYU1cCztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jHaxsCz4Eee284NYAyQpPw" target="_nVmDUCztEee284NYAyQpPw" source="_NkFNECztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_lFVP4Cz4Eee284NYAyQpPw" target="_yP7C4CztEee284NYAyQpPw" source="_nVmDUCztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_oGt9QCz4Eee284NYAyQpPw" name="[data OK]" target="_EirokCzuEee284NYAyQpPw" source="_yP7C4CztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wyh20Cz4Eee284NYAyQpPw" target="_3G9DQCztEee284NYAyQpPw" source="_EirokCzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zOh_MCz4Eee284NYAyQpPw" target="_UuJxoCzuEee284NYAyQpPw" source="_3G9DQCztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_5oE7MCz4Eee284NYAyQpPw" target="_bgXFQCzuEee284NYAyQpPw" source="_UuJxoCzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_6ZaRgCz4Eee284NYAyQpPw" target="_rhlGICzuEee284NYAyQpPw" source="_bgXFQCzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AuBqMCz5Eee284NYAyQpPw" name="[no hay coincidencias]" target="_IvDF4CzvEee284NYAyQpPw" source="_rhlGICzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_JKYygCz5Eee284NYAyQpPw" target="_FOdvgCz5Eee284NYAyQpPw" source="_IvDF4CzvEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_OVlsECz5Eee284NYAyQpPw" target="_3v75YCzuEee284NYAyQpPw" source="_FOdvgCz5Eee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nem-8Cz5Eee284NYAyQpPw" name="[ya existe una pasada]" target="_kielACz5Eee284NYAyQpPw" source="_rhlGICzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wgxjACz5Eee284NYAyQpPw" target="_kielACz5Eee284NYAyQpPw" source="_3v75YCzuEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1gm6ECz5Eee284NYAyQpPw" name="[data NO OK]" target="_kielACz5Eee284NYAyQpPw" source="_yP7C4CztEee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_BKqGYCz6Eee284NYAyQpPw" target="_-HfQUCz5Eee284NYAyQpPw" source="_kielACz5Eee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_bJiqQCz6Eee284NYAyQpPw" target="_Vuf94Cz6Eee284NYAyQpPw" source="_QbX3YCz6Eee284NYAyQpPw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_h8N38Cz6Eee284NYAyQpPw" target="_QbX3YCz6Eee284NYAyQpPw" source="_-HfQUCz5Eee284NYAyQpPw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_FmPpQCzsEee284NYAyQpPw" name="Timer_Exec" node="_sWauUCzsEee284NYAyQpPw _yEcoICzsEee284NYAyQpPw _2sCeUCzsEee284NYAyQpPw _QbX3YCz6Eee284NYAyQpPw _Vuf94Cz6Eee284NYAyQpPw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_GuSPYCzsEee284NYAyQpPw" name="Core_Administrator" node="_BGUr4CztEee284NYAyQpPw _NkFNECztEee284NYAyQpPw _nVmDUCztEee284NYAyQpPw _yP7C4CztEee284NYAyQpPw _3G9DQCztEee284NYAyQpPw _EirokCzuEee284NYAyQpPw _IvDF4CzvEee284NYAyQpPw _FOdvgCz5Eee284NYAyQpPw _kielACz5Eee284NYAyQpPw _-HfQUCz5Eee284NYAyQpPw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_JDHYwCzsEee284NYAyQpPw" name="Script_Repository" node="_HYU1cCztEee284NYAyQpPw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_LNrL0CzsEee284NYAyQpPw" name="Schedule_Repository" node="_WMIA8CztEee284NYAyQpPw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_NL7oQCzsEee284NYAyQpPw" name="Pass_sat" node="_UuJxoCzuEee284NYAyQpPw _bgXFQCzuEee284NYAyQpPw _rhlGICzuEee284NYAyQpPw _3v75YCzuEee284NYAyQpPw"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_sWauUCzsEee284NYAyQpPw" name="" outgoing="_ZqLxUCzvEee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_yEcoICzsEee284NYAyQpPw" name="Recibir tick" incoming="_ZqLxUCzvEee284NYAyQpPw" outgoing="_a6PrACzvEee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_2sCeUCzsEee284NYAyQpPw" name="Enviar alerta de ejecución de script" incoming="_a6PrACzvEee284NYAyQpPw" outgoing="_UAdZoCz4Eee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_BGUr4CztEee284NYAyQpPw" name="Identificar acción a realizar" incoming="_UAdZoCz4Eee284NYAyQpPw" outgoing="_aeRKkCz4Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_HYU1cCztEee284NYAyQpPw" name="Buscar script para ejecución" incoming="_aeRKkCz4Eee284NYAyQpPw" outgoing="_cCnSMCz4Eee284NYAyQpPw" inPartition="_JDHYwCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_NkFNECztEee284NYAyQpPw" name="Iniciar ejecución del script" incoming="_cCnSMCz4Eee284NYAyQpPw" outgoing="_jHaxsCz4Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_WMIA8CztEee284NYAyQpPw" name="Obtener Archivo de Planificación" outgoing="_s6eoMCztEee284NYAyQpPw" inPartition="_LNrL0CzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_nVmDUCztEee284NYAyQpPw" name="Verificar y validar datos del archivo" incoming="_s6eoMCztEee284NYAyQpPw _jHaxsCz4Eee284NYAyQpPw" outgoing="_lFVP4Cz4Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_yP7C4CztEee284NYAyQpPw" name="" incoming="_lFVP4Cz4Eee284NYAyQpPw" outgoing="_oGt9QCz4Eee284NYAyQpPw _1gm6ECz5Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3G9DQCztEee284NYAyQpPw" name="Obtener, propagar y almacenar TLE" incoming="_wyh20Cz4Eee284NYAyQpPw" outgoing="_zOh_MCz4Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_EirokCzuEee284NYAyQpPw" name="Leer AOS y LOS de cada pasada" incoming="_oGt9QCz4Eee284NYAyQpPw" outgoing="_wyh20Cz4Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_UuJxoCzuEee284NYAyQpPw" name="Buscar pasadas existentes" incoming="_zOh_MCz4Eee284NYAyQpPw" outgoing="_5oE7MCz4Eee284NYAyQpPw" inPartition="_NL7oQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_bgXFQCzuEee284NYAyQpPw" name="Determinar coincidencia" incoming="_5oE7MCz4Eee284NYAyQpPw" outgoing="_6ZaRgCz4Eee284NYAyQpPw" inPartition="_NL7oQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_rhlGICzuEee284NYAyQpPw" name="" incoming="_6ZaRgCz4Eee284NYAyQpPw" outgoing="_AuBqMCz5Eee284NYAyQpPw _nem-8Cz5Eee284NYAyQpPw" inPartition="_NL7oQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3v75YCzuEee284NYAyQpPw" name="Almacenar pasada" incoming="_OVlsECz5Eee284NYAyQpPw" outgoing="_wgxjACz5Eee284NYAyQpPw" inPartition="_NL7oQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_IvDF4CzvEee284NYAyQpPw" name="Crear nuevo archivo de estado de pasadas" incoming="_AuBqMCz5Eee284NYAyQpPw" outgoing="_JKYygCz5Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_FOdvgCz5Eee284NYAyQpPw" name="Asignar estado a cada pasada" incoming="_JKYygCz5Eee284NYAyQpPw" outgoing="_OVlsECz5Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_kielACz5Eee284NYAyQpPw" name="" incoming="_nem-8Cz5Eee284NYAyQpPw _wgxjACz5Eee284NYAyQpPw _1gm6ECz5Eee284NYAyQpPw" outgoing="_BKqGYCz6Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_-HfQUCz5Eee284NYAyQpPw" name="Finalizar proceso" incoming="_BKqGYCz6Eee284NYAyQpPw" outgoing="_h8N38Cz6Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_QbX3YCz6Eee284NYAyQpPw" name="Mostrar mensaje de estado" incoming="_h8N38Cz6Eee284NYAyQpPw" outgoing="_bJiqQCz6Eee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Vuf94Cz6Eee284NYAyQpPw" name="" incoming="_bJiqQCz6Eee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
