@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_CXMHkGSfEeanSuCkuAwiog" name="RootElement">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_-vtWcHz7EeaFbaOq4OILlg" annotatedElement="_zh-PgHz3EeaFbaOq4OILlg">
-      <body>Condition: {inclination_angle => 5°}
-Extend point: Inclination angle</body>
-    </ownedComment>
-    <ownedComment xmi:type="uml:Comment" xmi:id="_A6aeAHz9EeaFbaOq4OILlg" annotatedElement="_38aP8Hz2EeaFbaOq4OILlg">
-      <body>Condition: {conec_type = 'downlink'}
-Extend point: Tipo de conexión con la anena</body>
-    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_PDtHYGSoEeaQG6CvTBN4Qg" name="CONAE Ground Station">
       <packagedElement xmi:type="uml:Class" xmi:id="_mCnOsGVOEeah-PZgd78gpA" name="Client_Computer (GUI)">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_wX2XoGVjEeah-PZgd78gpA" name="station control system (scs)_1" type="_CiB1oGVPEeah-PZgd78gpA" association="_wX1wkGVjEeah-PZgd78gpA"/>
@@ -237,15 +229,16 @@ Extend point: Tipo de conexión con la anena</body>
     <packagedElement xmi:type="uml:Class" xmi:id="_Jlc9gGbuEeaLFIjgYj2DmA" name="Block9"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZUlI0GbuEeaLFIjgYj2DmA" name="Block10"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_hx1lcG3zEea-X92HuTy0Gw" name="CONAE Ground Station" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_-vtWcHz7EeaFbaOq4OILlg" annotatedElement="_zh-PgHz3EeaFbaOq4OILlg">
+        <body>Condition: {inclination_angle => 5°}
+Extend point: Inclination angle</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_7PYkkG34Eea-X92HuTy0Gw" name="Comandar y configurar componentes">
         <include xmi:type="uml:Include" xmi:id="_4Y3fgHxTEeaTxbq9MExE2Q" addition="_gbJ3oG35Eea-X92HuTy0Gw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_B8xCkG35Eea-X92HuTy0Gw" name="Obtener y Almacenar TLE"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_FM7y0G35Eea-X92HuTy0Gw" name="Cargar nuevo script">
-        <include xmi:type="uml:Include" xmi:id="_oTtrwHxREeaTxbq9MExE2Q" addition="_s2LMUHw7EeaTxbq9MExE2Q"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_B8xCkG35Eea-X92HuTy0Gw" name="Obtener, propagar y almacenar TLE"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FM7y0G35Eea-X92HuTy0Gw" name="Cargar nuevo script"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_JeLlkG35Eea-X92HuTy0Gw" name="Ejecutar seguimiento de pasadas">
-        <extend xmi:type="uml:Extend" xmi:id="_38aP8Hz2EeaFbaOq4OILlg" extendedCase="_cRU9sG4IEea-X92HuTy0Gw" extensionLocation="_38beEHz2EeaFbaOq4OILlg"/>
         <include xmi:type="uml:Include" xmi:id="_GRWZoHxREeaTxbq9MExE2Q" addition="_CPONgHw8EeaTxbq9MExE2Q"/>
         <include xmi:type="uml:Include" xmi:id="_QuS5oHxREeaTxbq9MExE2Q" addition="_UttZEG35Eea-X92HuTy0Gw"/>
       </packagedElement>
@@ -260,21 +253,23 @@ Extend point: Tipo de conexión con la anena</body>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_gbJ3oG35Eea-X92HuTy0Gw" name="Generar Archivo de Configuración"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_pj_EYG35Eea-X92HuTy0Gw" name="Mostrar estado de componentes e instrumentos"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_vVTiwG35Eea-X92HuTy0Gw" name="Alta y Baja de componente o instrumento"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_cRU9sG4IEea-X92HuTy0Gw" name="Almacenar datos de downlink">
-        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_38beEHz2EeaFbaOq4OILlg" name="ExtensionPoint1"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_VOszcHw1EeaTxbq9MExE2Q" name="Seleccionar pasadas a trackear">
-        <include xmi:type="uml:Include" xmi:id="_13MM8HxTEeaTxbq9MExE2Q" addition="_gbJ3oG35Eea-X92HuTy0Gw"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_VOszcHw1EeaTxbq9MExE2Q" name="Determinar pasadas a trackear">
+        <include xmi:type="uml:Include" xmi:id="_E-1icC9GEeeeLbJ7zEEm1w" addition="_B8xCkG35Eea-X92HuTy0Gw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_feV3QHw1EeaTxbq9MExE2Q" name="Asociar pasadas a una Misión"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_jiPKgHw1EeaTxbq9MExE2Q" name="Iniciar sesión de Usuario"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_s2LMUHw7EeaTxbq9MExE2Q" name="Seleccionar modo de ejecución de script"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_CPONgHw8EeaTxbq9MExE2Q" name="Validar ángulo de elevación de la antena">
         <extend xmi:type="uml:Extend" xmi:id="_zh-PgHz3EeaFbaOq4OILlg" extendedCase="_wc5U8Hz3EeaFbaOq4OILlg" extensionLocation="_zh-PgXz3EeaFbaOq4OILlg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_dGmNsHw-EeaTxbq9MExE2Q" name="ABM de Usuario"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_wc5U8Hz3EeaFbaOq4OILlg" name="Encender HPA" visibility="public">
         <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zh-PgXz3EeaFbaOq4OILlg" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_133jUC9FEeeeLbJ7zEEm1w" name="ABM de Configuración">
+        <include xmi:type="uml:Include" xmi:id="_6bSrMC9FEeeeLbJ7zEEm1w" addition="_gbJ3oG35Eea-X92HuTy0Gw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_JSlaIC9HEeeeLbJ7zEEm1w" name="Agregar nueva pasada por GUI">
+        <include xmi:type="uml:Include" xmi:id="_nMdM4C9HEeeeLbJ7zEEm1w" addition="_Z0K8kG35Eea-X92HuTy0Gw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_4dKfIG35Eea-X92HuTy0Gw" name="User"/>
@@ -296,13 +291,6 @@ Extend point: Tipo de conexión con la anena</body>
     <packagedElement xmi:type="uml:Actor" xmi:id="_qs-R4HxAEeaTxbq9MExE2Q" name="Administrador">
       <generalization xmi:type="uml:Generalization" xmi:id="_vb9JgHxAEeaTxbq9MExE2Q" general="_4dKfIG35Eea-X92HuTy0Gw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_1G2fsHxUEeaTxbq9MExE2Q" memberEnd="_1HBe0HxUEeaTxbq9MExE2Q _1HBe0XxUEeaTxbq9MExE2Q">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1G3t0HxUEeaTxbq9MExE2Q" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1G3t0XxUEeaTxbq9MExE2Q" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_1HBe0HxUEeaTxbq9MExE2Q" name="obtener tle" type="_B8xCkG35Eea-X92HuTy0Gw" association="_1G2fsHxUEeaTxbq9MExE2Q"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_1HBe0XxUEeaTxbq9MExE2Q" name="time" type="_SnFRYHRoEeaYbPgMtC8k1Q" association="_1G2fsHxUEeaTxbq9MExE2Q"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ci1jsHxVEeaTxbq9MExE2Q" memberEnd="_Ci1js3xVEeaTxbq9MExE2Q _Ci2KwHxVEeaTxbq9MExE2Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ci1jsXxVEeaTxbq9MExE2Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ci1jsnxVEeaTxbq9MExE2Q" key="nature" value="UML_Nature"/>
@@ -314,15 +302,8 @@ Extend point: Tipo de conexión con la anena</body>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JzsiMXxVEeaTxbq9MExE2Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JzsiMnxVEeaTxbq9MExE2Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_JzsiM3xVEeaTxbq9MExE2Q" name="cargar y propagar tle en gui" type="_Z0K8kG35Eea-X92HuTy0Gw" association="_JzsiMHxVEeaTxbq9MExE2Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JzsiM3xVEeaTxbq9MExE2Q" name="cargar y propagar tle en gui" type="_JSlaIC9HEeeeLbJ7zEEm1w" association="_JzsiMHxVEeaTxbq9MExE2Q"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_JzsiNHxVEeaTxbq9MExE2Q" name="user" type="_4dKfIG35Eea-X92HuTy0Gw" association="_JzsiMHxVEeaTxbq9MExE2Q"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Li85UHxVEeaTxbq9MExE2Q" memberEnd="_Li85U3xVEeaTxbq9MExE2Q _Li9gYHxVEeaTxbq9MExE2Q">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Li85UXxVEeaTxbq9MExE2Q" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Li85UnxVEeaTxbq9MExE2Q" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Li85U3xVEeaTxbq9MExE2Q" name="seleccionar pasadas a trackear" type="_VOszcHw1EeaTxbq9MExE2Q" association="_Li85UHxVEeaTxbq9MExE2Q"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Li9gYHxVEeaTxbq9MExE2Q" name="user" type="_4dKfIG35Eea-X92HuTy0Gw" association="_Li85UHxVEeaTxbq9MExE2Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_TXWCsHxVEeaTxbq9MExE2Q" memberEnd="_TXWpwnxVEeaTxbq9MExE2Q _TXXQ0HxVEeaTxbq9MExE2Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TXWpwHxVEeaTxbq9MExE2Q" source="org.eclipse.papyrus">
@@ -1533,26 +1514,29 @@ Creación de nueva instancia de usuario.</body>
       <message xmi:type="uml:Message" xmi:id="_GggZ0A_nEeeWl_Wkn3B2Nw" name="search_userData" messageSort="asynchCall" receiveEvent="_GghA4Q_nEeeWl_Wkn3B2Nw" sendEvent="_GghA4A_nEeeWl_Wkn3B2Nw"/>
       <message xmi:type="uml:Message" xmi:id="_QQg7UA_nEeeWl_Wkn3B2Nw" name="userData" messageSort="asynchCall" receiveEvent="_QQjXkA_nEeeWl_Wkn3B2Nw" sendEvent="_QQiwgA_nEeeWl_Wkn3B2Nw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_-WFLIP6EEeaAw91mpQQ2Dw" name="Obtener y Almacenar TLE" node="_qsLW4P6FEeaAw91mpQQ2Dw _uLQs4P6FEeaAw91mpQQ2Dw _13W14P6FEeaAw91mpQQ2Dw _JCBT8P6GEeaAw91mpQQ2Dw _PtMLcP6GEeaAw91mpQQ2Dw _hUKCIP6GEeaAw91mpQQ2Dw _qb_JUP6GEeaAw91mpQQ2Dw _6G1RkP6GEeaAw91mpQQ2Dw _8cUiQP6GEeaAw91mpQQ2Dw _N_PZ4P6cEeaAw91mpQQ2Dw _q3zEIP6dEeaAw91mpQQ2Dw _1yQpoBOxEeeQ0_OdXavPSw _WnpLQBOyEeeQ0_OdXavPSw _jRdygBOyEeeQ0_OdXavPSw" group="_GW0HYP6FEeaAw91mpQQ2Dw _HxJXYP6FEeaAw91mpQQ2Dw _INIIwP6FEeaAw91mpQQ2Dw _Mft_UP6FEeaAw91mpQQ2Dw _OsSkkP6FEeaAw91mpQQ2Dw">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_-WFLIP6EEeaAw91mpQQ2Dw" name="Obtener, propagar y almacenar TLE" node="_qsLW4P6FEeaAw91mpQQ2Dw _uLQs4P6FEeaAw91mpQQ2Dw _13W14P6FEeaAw91mpQQ2Dw _JCBT8P6GEeaAw91mpQQ2Dw _PtMLcP6GEeaAw91mpQQ2Dw _hUKCIP6GEeaAw91mpQQ2Dw _qb_JUP6GEeaAw91mpQQ2Dw _6G1RkP6GEeaAw91mpQQ2Dw _N_PZ4P6cEeaAw91mpQQ2Dw _q3zEIP6dEeaAw91mpQQ2Dw _1yQpoBOxEeeQ0_OdXavPSw _WnpLQBOyEeeQ0_OdXavPSw _jRdygBOyEeeQ0_OdXavPSw _JUY_sC9BEeeeLbJ7zEEm1w _LhJLIC9BEeeeLbJ7zEEm1w _Nl_-0C9BEeeeLbJ7zEEm1w _uoB1UC9BEeeeLbJ7zEEm1w" group="_GW0HYP6FEeaAw91mpQQ2Dw _HxJXYP6FEeaAw91mpQQ2Dw _INIIwP6FEeaAw91mpQQ2Dw _Mft_UP6FEeaAw91mpQQ2Dw _OsSkkP6FEeaAw91mpQQ2Dw">
       <edge xmi:type="uml:ControlFlow" xmi:id="_cFh_IP6cEeaAw91mpQQ2Dw" target="_uLQs4P6FEeaAw91mpQQ2Dw" source="_qsLW4P6FEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_f_fTQP6cEeaAw91mpQQ2Dw" target="_13W14P6FEeaAw91mpQQ2Dw" source="_uLQs4P6FEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_hWoFUP6cEeaAw91mpQQ2Dw" target="_JCBT8P6GEeaAw91mpQQ2Dw" source="_13W14P6FEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_kg_IgP6cEeaAw91mpQQ2Dw" target="_PtMLcP6GEeaAw91mpQQ2Dw" source="_JCBT8P6GEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_r8cNcP6cEeaAw91mpQQ2Dw" target="_qb_JUP6GEeaAw91mpQQ2Dw" source="_hUKCIP6GEeaAw91mpQQ2Dw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_H08lYP6dEeaAw91mpQQ2Dw" target="_8cUiQP6GEeaAw91mpQQ2Dw" source="_6G1RkP6GEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_tjWrcP6dEeaAw91mpQQ2Dw" target="_q3zEIP6dEeaAw91mpQQ2Dw" source="_N_PZ4P6cEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Pt798BOxEeeQ0_OdXavPSw" target="_hUKCIP6GEeaAw91mpQQ2Dw" source="_PtMLcP6GEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_6d0Z0BOxEeeQ0_OdXavPSw" target="_1yQpoBOxEeeQ0_OdXavPSw" source="_qb_JUP6GEeaAw91mpQQ2Dw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_70Lv0BOxEeeQ0_OdXavPSw" name="[TLE actual]" target="_6G1RkP6GEeaAw91mpQQ2Dw" source="_1yQpoBOxEeeQ0_OdXavPSw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_aCorcBOyEeeQ0_OdXavPSw" target="_WnpLQBOyEeeQ0_OdXavPSw" source="_8cUiQP6GEeaAw91mpQQ2Dw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_axeucBOyEeeQ0_OdXavPSw" target="_N_PZ4P6cEeaAw91mpQQ2Dw" source="_WnpLQBOyEeeQ0_OdXavPSw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_oeTDwBOyEeeQ0_OdXavPSw" name="[TLE no actual]" target="_jRdygBOyEeeQ0_OdXavPSw" source="_1yQpoBOxEeeQ0_OdXavPSw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_zIPd8BOyEeeQ0_OdXavPSw" target="_6G1RkP6GEeaAw91mpQQ2Dw" source="_jRdygBOyEeeQ0_OdXavPSw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_duu88C9BEeeeLbJ7zEEm1w" name="[TLE actual]" target="_uoB1UC9BEeeeLbJ7zEEm1w" source="_1yQpoBOxEeeQ0_OdXavPSw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nbVlIC9BEeeeLbJ7zEEm1w" target="_LhJLIC9BEeeeLbJ7zEEm1w" source="_JUY_sC9BEeeeLbJ7zEEm1w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_qw5ywC9BEeeeLbJ7zEEm1w" target="_Nl_-0C9BEeeeLbJ7zEEm1w" source="_LhJLIC9BEeeeLbJ7zEEm1w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3UDxUC9BEeeeLbJ7zEEm1w" target="_uoB1UC9BEeeeLbJ7zEEm1w" source="_jRdygBOyEeeQ0_OdXavPSw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_5l3b4C9BEeeeLbJ7zEEm1w" target="_JUY_sC9BEeeeLbJ7zEEm1w" source="_uoB1UC9BEeeeLbJ7zEEm1w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_I6BicC9CEeeeLbJ7zEEm1w" target="_6G1RkP6GEeaAw91mpQQ2Dw" source="_Nl_-0C9BEeeeLbJ7zEEm1w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_LSmjYC9CEeeeLbJ7zEEm1w" target="_WnpLQBOyEeeQ0_OdXavPSw" source="_6G1RkP6GEeaAw91mpQQ2Dw"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_GW0HYP6FEeaAw91mpQQ2Dw" name="Timer_Exec" node="_qsLW4P6FEeaAw91mpQQ2Dw _uLQs4P6FEeaAw91mpQQ2Dw _13W14P6FEeaAw91mpQQ2Dw _N_PZ4P6cEeaAw91mpQQ2Dw _q3zEIP6dEeaAw91mpQQ2Dw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_HxJXYP6FEeaAw91mpQQ2Dw" name="Core_Administrator" node="_JCBT8P6GEeaAw91mpQQ2Dw _hUKCIP6GEeaAw91mpQQ2Dw _WnpLQBOyEeeQ0_OdXavPSw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_INIIwP6FEeaAw91mpQQ2Dw" name="Scripts_Repository"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_HxJXYP6FEeaAw91mpQQ2Dw" name="Core_Administrator" node="_JCBT8P6GEeaAw91mpQQ2Dw _hUKCIP6GEeaAw91mpQQ2Dw _WnpLQBOyEeeQ0_OdXavPSw _JUY_sC9BEeeeLbJ7zEEm1w _LhJLIC9BEeeeLbJ7zEEm1w _Nl_-0C9BEeeeLbJ7zEEm1w"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_INIIwP6FEeaAw91mpQQ2Dw" name="Scripts_Repository" node="_uoB1UC9BEeeeLbJ7zEEm1w"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_Mft_UP6FEeaAw91mpQQ2Dw" name="InternalDB" node="_1yQpoBOxEeeQ0_OdXavPSw _jRdygBOyEeeQ0_OdXavPSw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_OsSkkP6FEeaAw91mpQQ2Dw" name="Files_Repository" node="_6G1RkP6GEeaAw91mpQQ2Dw _8cUiQP6GEeaAw91mpQQ2Dw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_OsSkkP6FEeaAw91mpQQ2Dw" name="Files_Repository" node="_6G1RkP6GEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:InitialNode" xmi:id="_qsLW4P6FEeaAw91mpQQ2Dw" outgoing="_cFh_IP6cEeaAw91mpQQ2Dw" inPartition="_GW0HYP6FEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:AcceptEventAction" xmi:id="_uLQs4P6FEeaAw91mpQQ2Dw" name="Recibir tick" incoming="_cFh_IP6cEeaAw91mpQQ2Dw" outgoing="_f_fTQP6cEeaAw91mpQQ2Dw" inPartition="_GW0HYP6FEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_13W14P6FEeaAw91mpQQ2Dw" name="Enviar alerta de ejecución" incoming="_f_fTQP6cEeaAw91mpQQ2Dw" outgoing="_hWoFUP6cEeaAw91mpQQ2Dw" inPartition="_GW0HYP6FEeaAw91mpQQ2Dw"/>
@@ -1560,13 +1544,16 @@ Creación de nueva instancia de usuario.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_PtMLcP6GEeaAw91mpQQ2Dw" name="Buscar script" incoming="_kg_IgP6cEeaAw91mpQQ2Dw" outgoing="_Pt798BOxEeeQ0_OdXavPSw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_hUKCIP6GEeaAw91mpQQ2Dw" name="Iniciar ejecución del script" incoming="_Pt798BOxEeeQ0_OdXavPSw" outgoing="_r8cNcP6cEeaAw91mpQQ2Dw" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_qb_JUP6GEeaAw91mpQQ2Dw" name="Buscar TLE" incoming="_r8cNcP6cEeaAw91mpQQ2Dw" outgoing="_6d0Z0BOxEeeQ0_OdXavPSw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_6G1RkP6GEeaAw91mpQQ2Dw" name="Almacenar TLE" incoming="_70Lv0BOxEeeQ0_OdXavPSw _zIPd8BOyEeeQ0_OdXavPSw" outgoing="_H08lYP6dEeaAw91mpQQ2Dw" inPartition="_OsSkkP6FEeaAw91mpQQ2Dw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_8cUiQP6GEeaAw91mpQQ2Dw" name="Enviar ACK" incoming="_H08lYP6dEeaAw91mpQQ2Dw" outgoing="_aCorcBOyEeeQ0_OdXavPSw" inPartition="_OsSkkP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_6G1RkP6GEeaAw91mpQQ2Dw" name="Almacenar TLE propagado" incoming="_I6BicC9CEeeeLbJ7zEEm1w" outgoing="_LSmjYC9CEeeeLbJ7zEEm1w" inPartition="_OsSkkP6FEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_N_PZ4P6cEeaAw91mpQQ2Dw" name="Reiniciar tiempo" incoming="_axeucBOyEeeQ0_OdXavPSw" outgoing="_tjWrcP6dEeaAw91mpQQ2Dw" inPartition="_GW0HYP6FEeaAw91mpQQ2Dw"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_q3zEIP6dEeaAw91mpQQ2Dw" incoming="_tjWrcP6dEeaAw91mpQQ2Dw" inPartition="_GW0HYP6FEeaAw91mpQQ2Dw"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_1yQpoBOxEeeQ0_OdXavPSw" name="" incoming="_6d0Z0BOxEeeQ0_OdXavPSw" outgoing="_70Lv0BOxEeeQ0_OdXavPSw _oeTDwBOyEeeQ0_OdXavPSw" inPartition="_Mft_UP6FEeaAw91mpQQ2Dw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_WnpLQBOyEeeQ0_OdXavPSw" name="Finalizar ejecución" incoming="_aCorcBOyEeeQ0_OdXavPSw" outgoing="_axeucBOyEeeQ0_OdXavPSw" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_jRdygBOyEeeQ0_OdXavPSw" name="Obtener el TLE más reciente" incoming="_oeTDwBOyEeeQ0_OdXavPSw" outgoing="_zIPd8BOyEeeQ0_OdXavPSw" inPartition="_Mft_UP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_1yQpoBOxEeeQ0_OdXavPSw" name="" incoming="_6d0Z0BOxEeeQ0_OdXavPSw" outgoing="_oeTDwBOyEeeQ0_OdXavPSw _duu88C9BEeeeLbJ7zEEm1w" inPartition="_Mft_UP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_WnpLQBOyEeeQ0_OdXavPSw" name="Finalizar ejecución" incoming="_LSmjYC9CEeeeLbJ7zEEm1w" outgoing="_axeucBOyEeeQ0_OdXavPSw" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_jRdygBOyEeeQ0_OdXavPSw" name="Obtener el TLE más reciente" incoming="_oeTDwBOyEeeQ0_OdXavPSw" outgoing="_3UDxUC9BEeeeLbJ7zEEm1w" inPartition="_Mft_UP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JUY_sC9BEeeeLbJ7zEEm1w" name="Propagar TLE obtenido" incoming="_5l3b4C9BEeeeLbJ7zEEm1w" outgoing="_nbVlIC9BEeeeLbJ7zEEm1w" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_LhJLIC9BEeeeLbJ7zEEm1w" name="Crear nuevo archivo" incoming="_nbVlIC9BEeeeLbJ7zEEm1w" outgoing="_qw5ywC9BEeeeLbJ7zEEm1w" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Nl_-0C9BEeeeLbJ7zEEm1w" name="Introducir datos propagados" incoming="_qw5ywC9BEeeeLbJ7zEEm1w" outgoing="_I6BicC9CEeeeLbJ7zEEm1w" inPartition="_HxJXYP6FEeaAw91mpQQ2Dw"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_uoB1UC9BEeeeLbJ7zEEm1w" name="" incoming="_duu88C9BEeeeLbJ7zEEm1w _3UDxUC9BEeeeLbJ7zEEm1w" outgoing="_5l3b4C9BEeeeLbJ7zEEm1w" inPartition="_INIIwP6FEeaAw91mpQQ2Dw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Activity" xmi:id="_hFeZAP6eEeaAw91mpQQ2Dw" name="Ejecutar seguimiento de pasada" node="_89rZgP6fEeaAw91mpQQ2Dw _jAZzoP6pEeaAw91mpQQ2Dw _nyH2MP6pEeaAw91mpQQ2Dw _vK6BoP6pEeaAw91mpQQ2Dw _8Rak4P6pEeaAw91mpQQ2Dw __G7ZcP6pEeaAw91mpQQ2Dw _SCENwP6qEeaAw91mpQQ2Dw _cy7IQP6qEeaAw91mpQQ2Dw _zuoPAP6qEeaAw91mpQQ2Dw _609YgP6qEeaAw91mpQQ2Dw _ABCb0P6rEeaAw91mpQQ2Dw _FX8PEP6rEeaAw91mpQQ2Dw _rnM_cP6rEeaAw91mpQQ2Dw _-xVSAP6rEeaAw91mpQQ2Dw _SwoSAP6sEeaAw91mpQQ2Dw _W8vGEP6sEeaAw91mpQQ2Dw _g670kP6sEeaAw91mpQQ2Dw _4Yf1wP6tEeaAw91mpQQ2Dw _EMpZQP6uEeaAw91mpQQ2Dw _Py_xUP6uEeaAw91mpQQ2Dw _2Nx1MP6uEeaAw91mpQQ2Dw _FrHs8P6vEeaAw91mpQQ2Dw _2eKvsP6wEeaAw91mpQQ2Dw _I03aMP6xEeaAw91mpQQ2Dw _NNGlwP6xEeaAw91mpQQ2Dw" group="_IfNYcP6fEeaAw91mpQQ2Dw _KRJ3MP6fEeaAw91mpQQ2Dw _Mlf4YP6fEeaAw91mpQQ2Dw _PTdTcP6fEeaAw91mpQQ2Dw _VaxP8P6fEeaAw91mpQQ2Dw _XL1k8P6fEeaAw91mpQQ2Dw _QyrDcP6fEeaAw91mpQQ2Dw">
       <edge xmi:type="uml:ControlFlow" xmi:id="_qrOp8P6sEeaAw91mpQQ2Dw" target="_jAZzoP6pEeaAw91mpQQ2Dw" source="_89rZgP6fEeaAw91mpQQ2Dw"/>
@@ -3007,6 +2994,20 @@ Valida los datos del archivo.</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_-HfQUCz5Eee284NYAyQpPw" name="Finalizar proceso" incoming="_BKqGYCz6Eee284NYAyQpPw" outgoing="_h8N38Cz6Eee284NYAyQpPw" inPartition="_GuSPYCzsEee284NYAyQpPw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_QbX3YCz6Eee284NYAyQpPw" name="Mostrar mensaje de estado" incoming="_h8N38Cz6Eee284NYAyQpPw" outgoing="_bJiqQCz6Eee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_Vuf94Cz6Eee284NYAyQpPw" name="" incoming="_bJiqQCz6Eee284NYAyQpPw" inPartition="_FmPpQCzsEee284NYAyQpPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fXsiAC9FEeeeLbJ7zEEm1w" memberEnd="_fX-14C9FEeeeLbJ7zEEm1w _fX_c8C9FEeeeLbJ7zEEm1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fX6kcC9FEeeeLbJ7zEEm1w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fX7LgC9FEeeeLbJ7zEEm1w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fX-14C9FEeeeLbJ7zEEm1w" name="determinar pasadas a trackear" type="_VOszcHw1EeaTxbq9MExE2Q" association="_fXsiAC9FEeeeLbJ7zEEm1w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fX_c8C9FEeeeLbJ7zEEm1w" type="_SnFRYHRoEeaYbPgMtC8k1Q" association="_fXsiAC9FEeeeLbJ7zEEm1w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_45UiIC9FEeeeLbJ7zEEm1w" memberEnd="_45VJMi9FEeeeLbJ7zEEm1w _45VwQC9FEeeeLbJ7zEEm1w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_45VJMC9FEeeeLbJ7zEEm1w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_45VJMS9FEeeeLbJ7zEEm1w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_45VJMi9FEeeeLbJ7zEEm1w" name="abm de configuración" type="_133jUC9FEeeeLbJ7zEEm1w" association="_45UiIC9FEeeeLbJ7zEEm1w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_45VwQC9FEeeeLbJ7zEEm1w" type="_4dKfIG35Eea-X92HuTy0Gw" association="_45UiIC9FEeeeLbJ7zEEm1w"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CbAQkGSfEeanSuCkuAwiog">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CbBesGSfEeanSuCkuAwiog" source="http://www.eclipse.org/uml2/2.0.0/UML">
